@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - FlowCreativ</title>
+    <meta name="description" content="Lihat hasil kerja kami dalam membantu UMKM bertumbuh melalui website profesional. Setiap proyek adalah studi kasus sukses.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .portfolio-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .portfolio-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .portfolio-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .portfolio-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(102, 126, 234, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-content {
+            padding: 2rem;
+        }
+        
+        .portfolio-category {
+            color: #667eea;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .portfolio-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .case-study-section {
+            margin: 2rem 0;
+        }
+        
+        .case-study-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-study-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-study-content {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .portfolio-results {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .results-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .results-list {
+            list-style: none;
+        }
+        
+        .results-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #28a745;
+            font-weight: 500;
+        }
+        
+        .results-list i {
+            color: #28a745;
+        }
+        
+        .portfolio-cta {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            color: #555;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>FlowCreativ</h2>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+                        <li><a href="portofolio.html" class="nav-link active">Portofolio</a></li>
+                        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website%20untuk%20bisnis%20saya." class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hasil Kerja Kami yang Membuat UMKM Bertumbuh
+                    </h1>
+                    <p class="hero-subtitle">
+                        Setiap proyek adalah studi kasus sukses yang menceritakan bagaimana kami membantu bisnis lokal mencapai tujuan digital mereka.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+                        <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20hasil%20kerja%20Anda%20dan%20ingin%20membuat%20website%20untuk%20bisnis%20saya." class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/portfolio-hero.jpg" alt="Portofolio FlowCreativ" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portofolio Proyek Kami</h2>
+                <p>Bukti nyata dari kemampuan kami membantu UMKM bertumbuh</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="umkm">Website UMKM</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Proyek 1: Toko Roti Makmur -->
+                <div class="portfolio-card" data-category="umkm">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-roti-makmur.jpg" alt="Website Toko Roti Makmur" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Website UMKM</div>
+                        <h3 class="portfolio-title">Toko Roti Makmur</h3>
+                        
+                        <div class="case-study-section">
+                            <div class="case-study-item">
+                                <div class="case-study-label">Konteks Proyek:</div>
+                                <div class="case-study-content">Toko roti tradisional yang sudah beroperasi 10 tahun, ingin memperluas jangkauan pelanggan melalui online.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Tantangan:</div>
+                                <div class="case-study-content">Website lama tidak responsif, sulit dikelola, dan tidak menghasilkan pesanan online. Tingkat pentalan tinggi (80%).</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Proses Kami:</div>
+                                <div class="case-study-content">Riset pengguna, analisis kompetitor, desain UX yang fokus pada konversi, dan implementasi sistem pemesanan online.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Solusi:</div>
+                                <div class="case-study-content">Website responsif dengan galeri produk yang menarik, sistem pemesanan online, dan integrasi WhatsApp untuk konfirmasi pesanan.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-results">
+                            <div class="results-title">Hasil yang Dicapai:</div>
+                            <ul class="results-list">
+                                <li><i class="fas fa-arrow-up"></i> Pesanan online meningkat 200%</li>
+                                <li><i class="fas fa-arrow-up"></i> Pertanyaan WhatsApp naik 30%</li>
+                                <li><i class="fas fa-arrow-down"></i> Tingkat pentalan turun ke 35%</li>
+                                <li><i class="fas fa-clock"></i> Waktu sesi rata-rata naik 45%</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="testimonial-quote">
+                            "Setelah website baru diluncurkan, pesanan online kami meningkat drastis. Tim FlowCreativ benar-benar memahami kebutuhan bisnis kami."
+                            <br><strong>- Sarah Wijaya, Pemilik Toko Roti Makmur</strong>
+                        </div>
+                        
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20hasil%20website%20Toko%20Roti%20Makmur%20dan%20ingin%20membuat%20website%20serupa." class="btn btn-outline" target="_blank">
+                                Buat Website Serupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: Bengkel Jaya Motor -->
+                <div class="portfolio-card" data-category="umkm">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-bengkel-jaya.jpg" alt="Website Bengkel Jaya Motor" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Website UMKM</div>
+                        <h3 class="portfolio-title">Bengkel Jaya Motor</h3>
+                        
+                        <div class="case-study-section">
+                            <div class="case-study-item">
+                                <div class="case-study-label">Konteks Proyek:</div>
+                                <div class="case-study-content">Bengkel motor yang ingin meningkatkan visibilitas online dan memudahkan pelanggan booking service.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Tantangan:</div>
+                                <div class="case-study-content">Tidak ada website, pelanggan sulit menemukan informasi layanan, dan proses booking masih manual.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Proses Kami:</div>
+                                <div class="case-study-content">Analisis layanan bengkel, desain sistem booking online, dan optimasi untuk pencarian lokal.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Solusi:</div>
+                                <div class="case-study-content">Website dengan sistem booking online, galeri layanan, dan optimasi SEO lokal untuk pencarian "bengkel motor terdekat".</div>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-results">
+                            <div class="results-title">Hasil yang Dicapai:</div>
+                            <ul class="results-list">
+                                <li><i class="fas fa-arrow-up"></i> Booking online meningkat 150%</li>
+                                <li><i class="fas fa-arrow-up"></i> Peringkat Google Maps naik</li>
+                                <li><i class="fas fa-arrow-up"></i> Pelanggan baru bertambah 40%</li>
+                                <li><i class="fas fa-clock"></i> Efisiensi administrasi meningkat</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="testimonial-quote">
+                            "Website baru membuat pelanggan lebih mudah menemukan dan booking layanan kami. Sistem booking online sangat membantu."
+                            <br><strong>- Budi Santoso, Pemilik Bengkel Jaya Motor</strong>
+                        </div>
+                        
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20hasil%20website%20Bengkel%20Jaya%20Motor%20dan%20ingin%20membuat%20website%20serupa." class="btn btn-outline" target="_blank">
+                                Buat Website Serupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Warung Makan Sederhana -->
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-warung-makan.jpg" alt="Website Warung Makan Sederhana" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">E-commerce</div>
+                        <h3 class="portfolio-title">Warung Makan Sederhana</h3>
+                        
+                        <div class="case-study-section">
+                            <div class="case-study-item">
+                                <div class="case-study-label">Konteks Proyek:</div>
+                                <div class="case-study-content">Warung makan yang ingin menjual makanan secara online dengan sistem delivery dan takeaway.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Tantangan:</div>
+                                <div class="case-study-content">Belum ada sistem pemesanan online, pelanggan harus datang langsung atau telepon untuk order.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Proses Kami:</div>
+                                <div class="case-study-content">Desain sistem e-commerce lengkap dengan katalog produk, keranjang belanja, dan integrasi payment gateway.</div>
+                            </div>
+                            
+                            <div class="case-study-item">
+                                <div class="case-study-label">Solusi:</div>
+                                <div class="case-study-content">Website e-commerce dengan sistem pemesanan online, payment gateway, dan dashboard admin untuk mengelola pesanan.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-results">
+                            <div class="results-title">Hasil yang Dicapai:</div>
+                            <ul class="results-list">
+                                <li><i class="fas fa-arrow-up"></i> Penjualan online 200%</li>
+                                <li><i class="fas fa-arrow-up"></i> Pelanggan baru bertambah 60%</li>
+                                <li><i class="fas fa-arrow-down"></i> Kesalahan order berkurang 80%</li>
+                                <li><i class="fas fa-clock"></i> Efisiensi operasional meningkat</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="testimonial-quote">
+                            "Pesanan online kami meningkat drastis setelah website baru. Sistem yang mudah digunakan dan pelanggan senang dengan kemudahan order."
+                            <br><strong>- Dewi Sari, Pemilik Warung Makan Sederhana</strong>
+                        </div>
+                        
+                        <div class="portfolio-cta">
+                            <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20hasil%20website%20Warung%20Makan%20Sederhana%20dan%20ingin%20membuat%20website%20e-commerce%20serupa." class="btn btn-outline" target="_blank">
+                                Buat Website Serupa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Siap Membuat Website yang Menghasilkan?</h2>
+                <p>Lihat bagaimana kami bisa membantu bisnis Anda bertumbuh seperti klien-klien kami</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/6285161917939?text=Halo%20FlowCreativ,%20saya%20tertarik%20dengan%20portofolio%20Anda%20dan%20ingin%20membuat%20website%20untuk%20bisnis%20saya." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Konsultasi Gratis Sekarang
+                    </a>
+                    <a href="layanan.html" class="btn btn-outline">Lihat Paket Harga</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <h3>FlowCreativ</h3>
+                        <p>Membantu UMKM bertumbuh melalui desain website profesional yang menghasilkan penjualan.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +62 851-6191-7939</p>
+                        <p><i class="fas fa-envelope"></i> info@flowcreativ.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="portofolio.html">Portofolio</a></li>
+                        <li><a href="blog.html">Blog/Studi Kasus</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="kontak.html">Halaman Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Layanan Utama</h4>
+                    <ul>
+                        <li><a href="layanan.html#website-umkm">Website untuk UMKM</a></li>
+                        <li><a href="layanan.html#ecommerce">Website E-commerce</a></li>
+                        <li><a href="layanan.html#landing-page">Desain Landing Page</a></li>
+                        <li><a href="layanan.html#seo">Optimasi SEO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Keterlibatan & Sosial</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Dapatkan Tips Website Gratis Bulanan</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Masukkan email Anda" required>
+                            <button type="submit" class="btn btn-primary">Berlangganan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlowCreativ. Hak Cipta Dilindungi. | <a href="privacy.html">Kebijakan Privasi</a> | <a href="terms.html">Syarat & Ketentuan</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Portfolio Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    portfolioCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
