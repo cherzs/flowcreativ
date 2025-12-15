@@ -21,13 +21,13 @@ export default function ContactPage() {
                                 <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                                 <div className="space-y-4 text-white/80">
                                     <p className="flex items-center gap-3">
-                                        <span className="text-purple-500 text-xl">✉️</span> flowcreative911@gmail.com
+                                        zhafrang638@gmail.com
                                     </p>
                                     <p className="flex items-center gap-3">
-                                        <span className="text-purple-500 text-xl">📱</span> +62 851-6191-7939
+                                        +62 851-6191-7939
                                     </p>
                                     <p className="flex items-center gap-3">
-                                        <span className="text-purple-500 text-xl">📍</span> Sleman, Yogyakarta
+                                        Sleman, Yogyakarta
                                     </p>
                                 </div>
                             </div>

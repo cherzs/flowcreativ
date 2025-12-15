@@ -82,7 +82,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-white">Contact</h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li>Email: flowcreative911@gmail.com</li>
+              <li>Email: zhafrang638@gmail.com</li>
               <li>Phone: +62 851-6191-7939</li>
               <li className="flex gap-4 mt-4">
                 <a href="#" className="hover:text-white transition-colors">

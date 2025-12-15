@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function PortfolioPreview() {
   const projects = [
@@ -74,7 +75,9 @@ export default function PortfolioPreview() {
         </div>
 
         <div className="text-center">
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8">View All Projects</Button>
+          <Link href="/portfolio">
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8">View All Projects</Button>
+          </Link>
         </div>
       </div>
     </section>
