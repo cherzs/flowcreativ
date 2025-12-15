@@ -1,20 +1,17 @@
 import ServicesOverview from "@/components/services-overview"
 import CTASection from "@/components/cta-section"
+import { getDictionary } from "@/lib/get-dictionary"
+import type { Locale } from "@/i18n-config"
 
-export default function ServicesPage() {
+export default async function ServicesPage({ params }: { params: { lang: Locale } }) {
+    const dictionary = await getDictionary(params.lang)
+
     return (
-        <main className="pt-24">
-            <div className="container mx-auto px-4 mb-12 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-                <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                    Comprehensive digital solutions tailored to your unique business needs.
-                </p>
-            </div>
-
+        <main>
             {/* Reusing the services component but we could make a detailed one later */}
-            <ServicesOverview />
+            <ServicesOverview dictionary={dictionary.services} />
 
-            <CTASection />
-        </main>
+            <CTASection lang={params.lang} />
+        </main >
     )
 }
