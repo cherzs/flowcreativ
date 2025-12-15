@@ -1,0 +1,92 @@
+{
+    "navigation": {
+        "home": "HOME",
+        "about": "ABOUT US",
+        "services": "SERVICES",
+        "portfolio": "PORTFOLIO",
+        "blog": "BLOG",
+        "faq": "FAQ",
+        "contact": "CONTACT",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "titleStart": "BUILD SCALABLE",
+        "titleHighlight": "DIGITAL SOLUTIONS",
+        "titleEnd": "FOR YOUR BUSINESS",
+        "description": "Transform your business with high-impact technology. We deliver enterprise-grade IT solutions, from web development to ERP implementation, designed to help you scale faster and more efficiently.",
+        "ctaPrimary": "GET A QUOTE NOW",
+        "ctaSecondary": "View Our Work",
+        "badge": "Best For Innovation 2024"
+    },
+    "whyChooseUs": {
+        "titleStart": "TAKE CONTROL OF",
+        "titleMiddle": "YOUR DIGITAL",
+        "titleHighlight": "TRANSFORMATION",
+        "subtitle": "EXCELLENCE AT EVERY STEP",
+        "features": [
+            {
+                "title": "Proven Expertise",
+                "description": "A dedicated team of experts delivering successful projects across industries, ensuring quality and innovation in every delivery."
+            },
+            {
+                "title": "Agile Development Process",
+                "description": "Iterative approach ensuring flexibility, transparency, and continuous delivery of value, adapting to your business needs in real-time."
+            },
+            {
+                "title": "Modern Technology Stack",
+                "description": "Leveraging cutting-edge technologies like React, Next.js, Node.js, and AWS to build future-proof, high-performance solutions."
+            },
+            {
+                "title": "Dedicated Support",
+                "description": "Proactive maintenance and responsive technical support to ensure your systems run smoothly and efficiently at all times."
+            }
+        ],
+        "cta": "GET STARTED"
+    },
+    "services": {
+        "titleStart": "OUR",
+        "titleHighlight": "SERVICES",
+        "subtitle": "Comprehensive technology solutions tailored to your business needs",
+        "items": [
+            {
+                "title": "IT Consulting",
+                "description": "Strategic technology consulting to optimize your IT infrastructure and digital transformation journey."
+            },
+            {
+                "title": "Web Development",
+                "description": "Custom web applications built with modern frameworks for scalability, performance, and user experience."
+            },
+            {
+                "title": "Odoo ERP",
+                "description": "Complete Odoo implementation, customization, and integration for streamlined business operations."
+            },
+            {
+                "title": "Mobile Apps",
+                "description": "Native iOS and Android applications with beautiful interfaces and seamless functionality."
+            },
+            {
+                "title": "UI/UX Design",
+                "description": "User-centered design solutions that combine aesthetics with intuitive user experiences."
+            },
+            {
+                "title": "Cyber Security",
+                "description": "Comprehensive security audits, penetration testing, and infrastructure protection services."
+            },
+            {
+                "title": "Server Setup",
+                "description": "Cloud infrastructure design, deployment, and management for reliable, scalable operations."
+            },
+            {
+                "title": "API Development",
+                "description": "RESTful and GraphQL API design and development for seamless system integrations."
+            }
+        ]
+    },
+    "footer": {
+        "description": "Helping businesses grow with scalable and modern digital solutions.",
+        "quickLinks": "Quick Links",
+        "mainServices": "Main Services",
+        "contact": "Contact",
+        "rights": "© 2024 FlowCreativ. All rights reserved."
+    }
+}

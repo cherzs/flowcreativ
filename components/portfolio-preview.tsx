@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function PortfolioPreview() {
+export default function PortfolioPreview({ lang }: { lang: string }) {
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -75,7 +75,7 @@ export default function PortfolioPreview() {
         </div>
 
         <div className="text-center">
-          <Link href="/portfolio">
+          <Link href={`/${lang}/portfolio`}>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8">View All Projects</Button>
           </Link>
         </div>

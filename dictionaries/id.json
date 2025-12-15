@@ -1,0 +1,92 @@
+{
+    "navigation": {
+        "home": "BERANDA",
+        "about": "TENTANG KAMI",
+        "services": "LAYANAN",
+        "portfolio": "PORTOFOLIO",
+        "blog": "BLOG",
+        "faq": "FAQ",
+        "contact": "KONTAK",
+        "getStarted": "Mulai Sekarang"
+    },
+    "hero": {
+        "titleStart": "BANGUN SOLUSI DIGITAL",
+        "titleHighlight": "YANG SKALABEL",
+        "titleEnd": "UNTUK BISNIS ANDA",
+        "description": "Transformasikan bisnis Anda dengan teknologi berdampak tinggi. Kami solusi IT kelas enterprise, dari web development hingga implementasi ERP, yang dirancang untuk membantu Anda berkembang lebih cepat.",
+        "ctaPrimary": "DAPATKAN PENAWARAN",
+        "ctaSecondary": "Lihat Karya Kami",
+        "badge": "Terbaik Untuk Inovasi 2024"
+    },
+    "whyChooseUs": {
+        "titleStart": "KENDALIKAN",
+        "titleMiddle": "TRANSFORMASI",
+        "titleHighlight": "DIGITAL ANDA",
+        "subtitle": "KEUNGGULAN DI SETIAP LANGKAH",
+        "features": [
+            {
+                "title": "Keahlian Terbukti",
+                "description": "Tim ahli yang berdedikasi memberikan proyek sukses di berbagai industri, memastikan kualitas dan inovasi dalam setiap pengiriman."
+            },
+            {
+                "title": "Proses Pengembangan Agile",
+                "description": "Pendekatan iteratif yang memastikan fleksibilitas, transparansi, dan penyampaian nilai secara berkelanjutan, beradaptasi dengan kebutuhan bisnis Anda."
+            },
+            {
+                "title": "Teknologi Modern",
+                "description": "Memanfaatkan teknologi terkini seperti React, Next.js, Node.js, dan AWS untuk membangun solusi masa depan yang berkinerja tinggi."
+            },
+            {
+                "title": "Dukungan Dedikatif",
+                "description": "Pemeliharaan proaktif dan dukungan teknis responsif untuk memastikan sistem Anda berjalan lancar dan efisien setiap saat."
+            }
+        ],
+        "cta": "MULAI SEKARANG"
+    },
+    "services": {
+        "titleStart": "LAYANAN",
+        "titleHighlight": "KAMI",
+        "subtitle": "Solusi teknologi komprehensif yang disesuaikan dengan kebutuhan bisnis Anda",
+        "items": [
+            {
+                "title": "Konsultasi IT",
+                "description": "Konsultasi teknologi strategis untuk mengoptimalkan infrastruktur IT dan perjalanan transformasi digital Anda."
+            },
+            {
+                "title": "Pengembangan Web",
+                "description": "Aplikasi web kustom yang dibangun dengan framework modern untuk skalabilitas, performa, dan pengalaman pengguna."
+            },
+            {
+                "title": "Odoo ERP",
+                "description": "Implementasi, kustomisasi, dan integrasi Odoo lengkap untuk operasional bisnis yang efisien."
+            },
+            {
+                "title": "Aplikasi Mobile",
+                "description": "Aplikasi iOS dan Android native dengan antarmuka indah dan fungsionalitas yang mulus."
+            },
+            {
+                "title": "Desain UI/UX",
+                "description": "Solusi desain berpusat pada pengguna yang menggabungkan estetika dengan pengalaman pengguna yang intuitif."
+            },
+            {
+                "title": "Keamanan Siber",
+                "description": "Audit keamanan komprehensif, penetration testing, dan layanan perlindungan infrastruktur."
+            },
+            {
+                "title": "Setup Server",
+                "description": "Desain, deployment, dan manajemen infrastruktur cloud untuk operasional yang andal dan skalabel."
+            },
+            {
+                "title": "Pengembangan API",
+                "description": "Desain dan pengembangan API RESTful dan GraphQL untuk integrasi sistem yang mulus."
+            }
+        ]
+    },
+    "footer": {
+        "description": "Membantu bisnis berkembang dengan solusi digital yang skalabel dan modern.",
+        "quickLinks": "Tautan Cepat",
+        "mainServices": "Layanan Utama",
+        "contact": "Kontak",
+        "rights": "© 2024 FlowCreativ. Hak cipta dilindungi undang-undang."
+    }
+}

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
-export default function Hero() {
+export default function Hero({ dictionary, lang }: { dictionary: any; lang: string }) {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-black via-purple-950/20 to-black overflow-hidden">
       {/* Background gradient effect */}
@@ -11,35 +12,38 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-              BUILD SCALABLE
+              {dictionary.titleStart}
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                DIGITAL SOLUTIONS
+                {dictionary.titleHighlight}
               </span>
               <br />
-              FOR YOUR BUSINESS
+              {dictionary.titleEnd}
             </h1>
             <p className="text-lg text-white/70 mb-8 leading-relaxed max-w-xl">
-              Transform your business with cutting-edge technology. We deliver enterprise-grade IT solutions, from web
-              development to ERP implementation, helping you scale efficiently.
+              {dictionary.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 text-base">
-                GET A QUOTE NOW
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 px-8 text-base bg-transparent"
-              >
-                View Our Work
-              </Button>
+              <Link href={`/${lang}/contact`}>
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 text-base">
+                  {dictionary.ctaPrimary}
+                </Button>
+              </Link>
+              <Link href={`/${lang}/portfolio`}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white/20 text-white hover:bg-white/10 px-8 text-base bg-transparent"
+                >
+                  {dictionary.ctaSecondary}
+                </Button>
+              </Link>
             </div>
 
             {/* Trust badges */}
             <div className="flex gap-4 mt-12">
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 text-sm text-white/80">
-                Best For Innovation 2024
+                {dictionary.badge}
               </div>
             </div>
           </div>
