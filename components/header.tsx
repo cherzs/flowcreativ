@@ -23,7 +23,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="relative h-20 w-[280px] md:h-24 md:w-[400px] overflow-hidden">
+          <div className="relative h-12 w-[180px] md:h-16 md:w-[260px] overflow-hidden">
             <Image
               src="/logo.png"
               alt="FlowCreativ Logo"
