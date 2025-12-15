@@ -39,7 +39,7 @@ export default function Hero() {
             {/* Trust badges */}
             <div className="flex gap-4 mt-12">
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 text-sm text-white/80">
-                ⭐ Best For Innovation 2024
+                Best For Innovation 2024
               </div>
             </div>
           </div>
