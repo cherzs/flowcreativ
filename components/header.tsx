@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 
@@ -21,8 +22,15 @@ export default function Header() {
         }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-white">
-          FlowCreativ
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="FlowCreativ Logo"
+            width={150}
+            height={40}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
