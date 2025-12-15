@@ -26,9 +26,9 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="FlowCreativ Logo"
-            width={200}
-            height={50}
-            className="h-8 md:h-12 w-auto object-contain"
+            width={400}
+            height={100}
+            className="h-16 md:h-24 w-auto object-contain"
             priority
           />
         </Link>
