@@ -22,15 +22,16 @@ export default function Header() {
         }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center overflow-hidden">
-          <Image
-            src="/logo.png"
-            alt="FlowCreativ Logo"
-            width={400}
-            height={120}
-            className="h-20 w-auto md:h-24 object-contain scale-125"
-            priority
-          />
+        <Link href="/" className="flex items-center">
+          <div className="relative h-20 w-[280px] md:h-24 md:w-[400px] overflow-hidden">
+            <Image
+              src="/logo.png"
+              alt="FlowCreativ Logo"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
