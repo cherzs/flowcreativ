@@ -9,24 +9,25 @@ import CTASection from "@/components/cta-section"
 import { getDictionary } from "@/lib/get-dictionary"
 import type { Locale } from "@/i18n-config"
 
-export default async function HomePage({ params }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(params.lang)
+export default async function HomePage({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params
+  const dictionary = await getDictionary(lang)
 
   return (
     <main className="min-h-screen">
       {/* @ts-ignore */}
-      <Hero dictionary={dictionary.hero} lang={params.lang} />
+      <Hero dictionary={dictionary.hero} lang={lang} />
       <TrustedBy />
       {/* @ts-ignore */}
       <ServicesOverview dictionary={dictionary.services} />
       {/* @ts-ignore */}
-      <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={params.lang} />
+      <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={lang} />
       {/* @ts-ignore */}
-      <PortfolioPreview lang={params.lang} />
+      <PortfolioPreview lang={lang} />
       <ProcessSection />
       <Testimonials />
       {/* @ts-ignore */}
-      <CTASection lang={params.lang} />
+      <CTASection lang={lang} />
     </main>
   )
 }

@@ -1,7 +1,10 @@
 import PortfolioPreview from "@/components/portfolio-preview"
 import CTASection from "@/components/cta-section"
 
-export default function PortfolioPage() {
+import type { Locale } from "@/i18n-config"
+
+export default async function PortfolioPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params
     return (
         <main className="pt-24">
             <div className="container mx-auto px-4 mb-12 text-center">
@@ -12,9 +15,9 @@ export default function PortfolioPage() {
             </div>
 
             {/* Reusing the portfolio component */}
-            <PortfolioPreview />
+            <PortfolioPreview lang={lang} />
 
-            <CTASection />
+            <CTASection lang={lang} />
         </main>
     )
 }

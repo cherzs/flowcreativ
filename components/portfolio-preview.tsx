@@ -10,21 +10,21 @@ export default function PortfolioPreview({ lang }: { lang: string }) {
       industry: "Retail",
       description: "Custom Shopify solution processing 10K+ daily transactions",
       tech: ["React", "Node.js", "PostgreSQL"],
-      image: "/ecommerce-dashboard.png",
+      image: "/ecommerce-store-mockup.png",
     },
     {
       title: "Healthcare Management System",
       industry: "Healthcare",
       description: "HIPAA-compliant patient management and telemedicine platform",
       tech: ["Next.js", "AWS", "MongoDB"],
-      image: "/healthcare-management-interface.jpg",
+      image: "/healthcare-system-ui.png",
     },
     {
       title: "Fintech Mobile App",
       industry: "Finance",
       description: "Banking app with 500K+ active users and real-time transactions",
       tech: ["React Native", "Firebase", "Stripe"],
-      image: "/fintech-mobile-app.png",
+      image: "/fintech-banking-app.png",
     },
   ]
 

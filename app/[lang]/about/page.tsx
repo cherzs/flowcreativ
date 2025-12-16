@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Locale } from "@/i18n-config"
 
-export default function AboutPage({ params }: { params: { lang: Locale } }) {
+export default async function AboutPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params
     return (
         <main className="min-h-screen pt-24 pb-12">
             <div className="container mx-auto px-4">
@@ -24,7 +25,7 @@ export default function AboutPage({ params }: { params: { lang: Locale } }) {
                     </div>
 
                     <div className="pt-8">
-                        <Link href={`/${params.lang}/contact`}>
+                        <Link href={`/${lang}/contact`}>
                             <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
                                 Work With Us
                             </Button>

@@ -3,15 +3,16 @@ import CTASection from "@/components/cta-section"
 import { getDictionary } from "@/lib/get-dictionary"
 import type { Locale } from "@/i18n-config"
 
-export default async function ServicesPage({ params }: { params: { lang: Locale } }) {
-    const dictionary = await getDictionary(params.lang)
+export default async function ServicesPage({ params }: { params: Promise<{ lang: Locale }> }) {
+    const { lang } = await params
+    const dictionary = await getDictionary(lang)
 
     return (
         <main>
             {/* Reusing the services component but we could make a detailed one later */}
             <ServicesOverview dictionary={dictionary.services} />
 
-            <CTASection lang={params.lang} />
+            <CTASection lang={lang} />
         </main >
     )
 }

@@ -50,7 +50,7 @@ export default function Hero({ dictionary, lang }: { dictionary: any; lang: stri
 
           <div className="relative">
             <Image
-              src="/modern-tech-dashboard-mockup.jpg"
+              src="/hero-tech-workspace.png"
               alt="Technology Dashboard"
               width={600}
               height={600}

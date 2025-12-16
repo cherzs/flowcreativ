@@ -69,9 +69,9 @@ export default function Header({ dictionary, lang }: { dictionary: any; lang: st
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-2 text-sm font-medium">
-            <Link href={switchLanguage("en")} className={`${lang === "en" ? "text-white" : "text-white/50 hover:text-white"}`}>EN</Link>
+            <a href={switchLanguage("en")} className={`${lang === "en" ? "text-white" : "text-white/50 hover:text-white"}`}>EN</a>
             <span className="text-white/20">|</span>
-            <Link href={switchLanguage("id")} className={`${lang === "id" ? "text-white" : "text-white/50 hover:text-white"}`}>ID</Link>
+            <a href={switchLanguage("id")} className={`${lang === "id" ? "text-white" : "text-white/50 hover:text-white"}`}>ID</a>
           </div>
           <Link href={`/${lang}/contact`}>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6">{dictionary.getStarted}</Button>
