@@ -7,7 +7,7 @@ export function getNotificationEmailHtml(data: ContactFormData) {
     'odoo-erp': 'Odoo ERP',
     'mobile-apps': 'Mobile Apps',
     'ui-ux-design': 'UI/UX Design',
-    'cyber-security': 'Cyber Security',
+    'ai-automation': 'AI Solutions & Automation',
     'server-setup': 'Server Setup',
     'api-development': 'API Development',
   }
@@ -115,7 +115,7 @@ export function getNotificationEmailText(data: ContactFormData) {
     'odoo-erp': 'Odoo ERP',
     'mobile-apps': 'Mobile Apps',
     'ui-ux-design': 'UI/UX Design',
-    'cyber-security': 'Cyber Security',
+    'ai-automation': 'AI Solutions & Automation',
     'server-setup': 'Server Setup',
     'api-development': 'API Development',
   }

@@ -35,7 +35,7 @@ export function getAutoReplyEmailHtml(data: ContactFormData, lang: 'en' | 'id' =
     'odoo-erp': { en: 'Odoo ERP', id: 'Odoo ERP' },
     'mobile-apps': { en: 'Mobile Apps', id: 'Aplikasi Mobile' },
     'ui-ux-design': { en: 'UI/UX Design', id: 'Desain UI/UX' },
-    'cyber-security': { en: 'Cyber Security', id: 'Keamanan Siber' },
+    'ai-automation': { en: 'AI Solutions & Automation', id: 'Solusi AI & Otomasi' },
     'server-setup': { en: 'Server Setup', id: 'Setup Server' },
     'api-development': { en: 'API Development', id: 'Pengembangan API' },
   }
@@ -145,7 +145,7 @@ export function getAutoReplyEmailText(data: ContactFormData, lang: 'en' | 'id' =
     'odoo-erp': { en: 'Odoo ERP', id: 'Odoo ERP' },
     'mobile-apps': { en: 'Mobile Apps', id: 'Aplikasi Mobile' },
     'ui-ux-design': { en: 'UI/UX Design', id: 'Desain UI/UX' },
-    'cyber-security': { en: 'Cyber Security', id: 'Keamanan Siber' },
+    'ai-automation': { en: 'AI Solutions & Automation', id: 'Solusi AI & Otomasi' },
     'server-setup': { en: 'Server Setup', id: 'Setup Server' },
     'api-development': { en: 'API Development', id: 'Pengembangan API' },
   }

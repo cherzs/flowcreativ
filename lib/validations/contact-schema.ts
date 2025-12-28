@@ -35,7 +35,7 @@ export const contactFormSchema = z.object({
     'odoo-erp',
     'mobile-apps',
     'ui-ux-design',
-    'cyber-security',
+    'ai-automation',
     'server-setup',
     'api-development',
   ], {
