@@ -1,7 +1,7 @@
 import { getDictionary } from '@/lib/get-dictionary'
 import { type Locale } from '@/i18n-config'
 import { ContactForm } from '@/components/contact/contact-form'
-import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
 
 export default async function ContactPage({
   params,
@@ -42,13 +42,24 @@ export default async function ContactPage({
                     <Mail className="h-4 w-4" />
                     {dictionary.contact.info.email}
                   </a>
-                  <a
-                    href={`tel:${dictionary.contact.info.phone.replace(/\s/g, '')}`}
-                    className="flex items-center gap-3 hover:text-purple-400 transition-colors"
-                  >
-                    <Phone className="h-4 w-4" />
-                    {dictionary.contact.info.phone}
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href={`tel:${dictionary.contact.info.phone.replace(/\s/g, '')}`}
+                      className="flex items-center gap-3 hover:text-purple-400 transition-colors"
+                    >
+                      <Phone className="h-4 w-4" />
+                      {dictionary.contact.info.phone}
+                    </a>
+                    <a
+                      href={`https://wa.me/${dictionary.contact.info.phone.replace(/[\s+-]/g, '')}?text=${encodeURIComponent(lang === 'id' ? 'Halo, saya tertarik dengan layanan FlowCreativ' : 'Hello, I am interested in FlowCreativ services')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-600 hover:bg-green-500 text-white text-sm font-medium rounded-full transition-all duration-200 hover:scale-105"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      WhatsApp
+                    </a>
+                  </div>
                   <p className="flex items-center gap-3">
                     <MapPin className="h-4 w-4" />
                     {dictionary.contact.info.location}
