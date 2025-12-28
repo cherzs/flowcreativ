@@ -88,5 +88,63 @@
         "mainServices": "Layanan Utama",
         "contact": "Kontak",
         "rights": "© 2024 FlowCreativ. Hak cipta dilindungi undang-undang."
+    },
+    "contact": {
+        "title": "Hubungi Kami",
+        "subtitle": "Siap memulai proyek Anda? Hubungi kami hari ini.",
+        "info": {
+            "title": "Informasi Kontak",
+            "email": "sales@flowcreativ.com",
+            "phone": "+62 851-6191-7939",
+            "location": "Sleman, Yogyakarta"
+        },
+        "hours": {
+            "title": "Jam Operasional",
+            "weekdays": "Senin - Jumat: 09:00 - 17:00 WIB",
+            "weekends": "Sabtu - Minggu: Tutup"
+        },
+        "form": {
+            "title": "Kirim Pesan",
+            "fields": {
+                "fullName": {
+                    "label": "Nama Lengkap",
+                    "placeholder": "Budi Santoso"
+                },
+                "email": {
+                    "label": "Alamat Email",
+                    "placeholder": "budi@contoh.com"
+                },
+                "phone": {
+                    "label": "Nomor Telepon (Opsional)",
+                    "placeholder": "+62 812-3456-7890"
+                },
+                "company": {
+                    "label": "Nama Perusahaan (Opsional)",
+                    "placeholder": "Perusahaan Anda"
+                },
+                "service": {
+                    "label": "Layanan yang Diminati",
+                    "placeholder": "Pilih layanan",
+                    "options": {
+                        "it-consulting": "Konsultasi IT",
+                        "web-development": "Pengembangan Web",
+                        "odoo-erp": "Odoo ERP",
+                        "mobile-apps": "Aplikasi Mobile",
+                        "ui-ux-design": "Desain UI/UX",
+                        "cyber-security": "Keamanan Siber",
+                        "server-setup": "Setup Server",
+                        "api-development": "Pengembangan API"
+                    }
+                },
+                "message": {
+                    "label": "Pesan",
+                    "placeholder": "Ceritakan tentang proyek Anda..."
+                }
+            },
+            "submit": "Kirim Pesan",
+            "submitting": "Mengirim...",
+            "success": "Terima kasih! Kami akan merespons dalam 24 jam.",
+            "error": "Gagal mengirim pesan. Silakan coba lagi."
+        }
     }
 }

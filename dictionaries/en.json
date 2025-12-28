@@ -88,5 +88,63 @@
         "mainServices": "Main Services",
         "contact": "Contact",
         "rights": "© 2024 FlowCreativ. All rights reserved."
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Ready to start your project? Contact us today.",
+        "info": {
+            "title": "Contact Information",
+            "email": "sales@flowcreativ.com",
+            "phone": "+62 851-6191-7939",
+            "location": "Sleman, Yogyakarta"
+        },
+        "hours": {
+            "title": "Office Hours",
+            "weekdays": "Monday - Friday: 09:00 - 17:00 WIB",
+            "weekends": "Saturday - Sunday: Closed"
+        },
+        "form": {
+            "title": "Send us a Message",
+            "fields": {
+                "fullName": {
+                    "label": "Full Name",
+                    "placeholder": "John Doe"
+                },
+                "email": {
+                    "label": "Email Address",
+                    "placeholder": "john@example.com"
+                },
+                "phone": {
+                    "label": "Phone Number (Optional)",
+                    "placeholder": "+62 812-3456-7890"
+                },
+                "company": {
+                    "label": "Company Name (Optional)",
+                    "placeholder": "Your Company"
+                },
+                "service": {
+                    "label": "Service Interest",
+                    "placeholder": "Select a service",
+                    "options": {
+                        "it-consulting": "IT Consulting",
+                        "web-development": "Web Development",
+                        "odoo-erp": "Odoo ERP",
+                        "mobile-apps": "Mobile Apps",
+                        "ui-ux-design": "UI/UX Design",
+                        "cyber-security": "Cyber Security",
+                        "server-setup": "Server Setup",
+                        "api-development": "API Development"
+                    }
+                },
+                "message": {
+                    "label": "Message",
+                    "placeholder": "Tell us about your project..."
+                }
+            },
+            "submit": "Send Message",
+            "submitting": "Sending...",
+            "success": "Thank you! We'll get back to you within 24 hours.",
+            "error": "Failed to send message. Please try again."
+        }
     }
 }
