@@ -23,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       {/* @ts-ignore */}
       <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={lang} />
       {/* @ts-ignore */}
-      <PortfolioPreview lang={lang} />
+      <PortfolioPreview lang={lang} limit={6} />
       <ProcessSection />
       <Testimonials />
       {/* @ts-ignore */}
