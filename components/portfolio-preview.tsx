@@ -16,6 +16,11 @@ export default function PortfolioPreview({
 }) {
   const projectsData = [
     {
+      key: "kubeletto",
+      image: "/Kubeletto.png",
+      href: "https://kubeletto.com",
+    },
+    {
       key: "saasquatch",
       image: "/SaasquatchLeads.png",
       href: "https://www.saasquatchleads.com",
@@ -24,11 +29,6 @@ export default function PortfolioPreview({
       key: "tradingJournal",
       image: "/tradingjournal.png",
       href: "https://trading-journal-nu-brown.vercel.app",
-    },
-    {
-      key: "kubeletto",
-      image: "/Kubeletto.png",
-      href: "https://kubeletto.com",
     },
     {
       key: "tradingAssistance",
