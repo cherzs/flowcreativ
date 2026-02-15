@@ -146,5 +146,171 @@
             "success": "Terima kasih! Kami akan merespons dalam 24 jam.",
             "error": "Gagal mengirim pesan. Silakan coba lagi."
         }
+    },
+    "portfolio": {
+        "sectionTitle": "Karya Terpilih",
+        "sectionHighlight": "Sorotan Portofolio",
+        "labels": {
+            "visitWebsite": "Kunjungi Website"
+        },
+        "projects": {
+            "saasquatch": {
+                "title": "SaaSquatchLeads",
+                "industry": "SaaS / Dashboard",
+                "description": "SaaS generasi prospek dengan dashboard, otomatisasi, dan alur onboarding modern."
+            },
+            "tradingJournal": {
+                "title": "Aplikasi Web Jurnal Trading",
+                "industry": "Alat Trading",
+                "description": "Jurnal trading berbasis browser untuk mencatat, meninjau, dan menganalisis performa trading."
+            },
+            "kubeletto": {
+                "title": "Website Kubeletto",
+                "industry": "Website Perusahaan / Klien",
+                "description": "Website perusahaan untuk Kubeletto dengan tata letak bersih dan berfokus pada produk."
+            },
+            "tradingAssistance": {
+                "title": "Alat Bantuan Trading",
+                "industry": "Alat Trading",
+                "description": "Antarmuka bantuan trading berbasis web untuk mendukung alur kerja pengambilan keputusan."
+            },
+            "odooErp": {
+                "title": "Instansi Odoo ERP",
+                "industry": "Implementasi ERP / Odoo",
+                "description": "Deployment Odoo mandiri yang disesuaikan untuk operasional bisnis."
+            },
+            "odooFms": {
+                "title": "Implementasi Odoo FMS",
+                "industry": "Implementasi ERP / Odoo",
+                "description": "Sistem Manajemen Armada yang dibangun di atas Odoo dengan alur kustom."
+            },
+            "chillin": {
+                "title": "Konsep Website CHILL.IN",
+                "industry": "Konsep Brand & Landing Page",
+                "description": "Eksplorasi website brand-first CHILL.IN yang berfokus pada penceritaan visual."
+            },
+            "emberRoastery": {
+                "title": "Landing Page Ember Roastery",
+                "industry": "Konsep Landing Page / Brand",
+                "description": "Eksplorasi landing page untuk brand roastery kopi spesial."
+            },
+            "luxuryGlamping": {
+                "title": "UI Glamping Mewah",
+                "industry": "Konsep Landing Page / Brand",
+                "description": "UI pengalaman pemesanan glamping mewah dengan arahan visual premium."
+            }
+        }
+    },
+    "trustedBy": {
+        "deliveredTitle": "Dipercaya oleh tim yang kami layani",
+        "contributedTitle": "Dikontribusikan oleh engineer kami",
+        "contributedDescription": "Untuk Patra Jasa (E-Inspection, House Office, Property Development, Property Investment, E-Asset, FMS), CIMB Niaga, Telkomsel By.U, Sinarmas, dan Saasquatch.",
+        "footerText": "Perpaduan antara pengiriman langsung dan pengalaman kelas enterprise ini membentuk setiap keterlibatan."
+    },
+    "process": {
+        "titleStart": "Cara kami",
+        "titleHighlight": "bekerja",
+        "description": "Proses teruji kami memastikan kesuksesan pengiriman setiap saat.",
+        "learnMore": "Pelajari lebih lanjut",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Temukan",
+                "description": "Memahami tujuan bisnis, tantangan, dan kebutuhan teknis Anda"
+            },
+            {
+                "number": "02",
+                "title": "Desain",
+                "description": "Menciptakan desain berpusat pada pengguna dan arsitektur teknis"
+            },
+            {
+                "number": "03",
+                "title": "Kembangkan",
+                "description": "Membangun solusi Anda dengan metodologi agile dan praktik terbaik"
+            },
+            {
+                "number": "04",
+                "title": "Deploy",
+                "description": "Meluncurkan produk Anda dengan pengujian menyeluruh dan jaminan kualitas"
+            },
+            {
+                "number": "05",
+                "title": "Dukung",
+                "description": "Pemeliharaan berkelanjutan, pembaruan, dan dukungan teknis"
+            }
+        ]
+    },
+    "testimonials": {
+        "label": "Testimoni",
+        "titleStart": "Cerita",
+        "titleHighlight": "Klien",
+        "description": "Dengar apa kata klien kami tentang bekerja sama dengan kami",
+        "items": [
+            {
+                "quote": "TechForge mengubah sistem usang kami menjadi platform modern dan skalabel. Keahlian mereka dalam arsitektur cloud menghemat biaya operasional kami sebesar 40%.",
+                "author": "Sarah Johnson",
+                "role": "CTO, RetailCorp"
+            },
+            {
+                "quote": "Tim mengirimkan aplikasi mobile kami lebih cepat dari jadwal dengan kualitas luar biasa. Pendekatan agile mereka membuat kami terus terinformasi di setiap langkah.",
+                "author": "Michael Chen",
+                "role": "Founder, HealthTech Solutions"
+            },
+            {
+                "quote": "Implementasi Odoo yang luar biasa! Mereka memahami alur kerja kompleks kami dan memberikan solusi yang meningkatkan efisiensi sebesar 60%.",
+                "author": "Emma Williams",
+                "role": "Direktur Operasional, ManufacturePro"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Siap memulai proyek Anda?",
+        "description": "Mari bangun sesuatu yang luar biasa bersama. Hubungi kami untuk konsultasi dan penawaran gratis.",
+        "cardTitle": "Mulai Proyek",
+        "cardDescription": "Ceritakan tentang tujuan Anda dan kami akan kembali dalam 24 jam.",
+        "primary": "Dapatkan Penawaran Gratis",
+        "secondary": "Jadwalkan Panggilan"
+    },
+    "portfolioPage": {
+        "title": "Karya Terpilih",
+        "description": "Pameran proyek terbaru dan kisah sukses kami."
+    },
+    "aboutPage": {
+        "title": "Tentang FlowCreativ",
+        "description": "Kami adalah tim inovator digital yang berdedikasi untuk memperkecil jarak antara teknologi dan pertumbuhan bisnis.",
+        "missionTitle": "Misi Kami",
+        "missionDescription": "Memberdayakan bisnis dengan solusi digital yang skalabel dan berkinerja tinggi yang memberikan hasil nyata.",
+        "visionTitle": "Visi Kami",
+        "visionDescription": "Menjadi mitra utama bagi perusahaan yang ingin mengubah kehadiran digital mereka melalui desain dan teknologi.",
+        "teamTitle": "Orang di Balik FlowCreativ",
+        "teamDescription": "Temui para engineer dan konsultan di balik pengiriman kami.",
+        "ctaButton": "Bekerja Bersama Kami"
+    },
+    "blogPage": {
+        "title": "Blog Kami",
+        "description": "Wawasan, pembaruan, dan berita dari tim FlowCreativ.",
+        "comingSoonTitle": "Segera Hadir",
+        "comingSoonDescription": "Kami sedang membuat artikel berkualitas tinggi untuk Anda. Tetaplah bersama kami!"
+    },
+    "faqPage": {
+        "title": "Pertanyaan yang Sering Diajukan",
+        "items": [
+            {
+                "question": "Berapa lama proyek website berlangsung?",
+                "answer": "Biasanya, website profil perusahaan standar memakan waktu 1-2 minggu, sementara e-commerce atau aplikasi web kustom yang lebih kompleks bisa memakan waktu 4-8 minggu tergantung kebutuhan."
+            },
+            {
+                "question": "Apakah Anda menyediakan hosting dan domain?",
+                "answer": "Ya, kami dapat menangani seluruh pengaturan termasuk pendaftaran domain dan konfigurasi cloud hosting sehingga Anda tidak perlu khawatir tentang detail teknis."
+            },
+            {
+                "question": "Apakah desainnya ramah seluler?",
+                "answer": "Tentu saja. Semua desain kami \"Mobile-First\" dan sepenuhnya responsif, memastikan tampilan sempurna di smartphone, tablet, dan desktop."
+            },
+            {
+                "question": "Bagaimana struktur pembayaran Anda?",
+                "answer": "Kami biasanya mensyaratkan deposit 50% untuk memulai proyek, dengan sisa 50% dibayarkan setelah penyelesaian dan persetujuan akhir Anda sebelum peluncuran."
+            }
+        ]
     }
 }

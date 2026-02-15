@@ -21,13 +21,15 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       <ServicesOverview dictionary={dictionary.services} />
       {/* @ts-ignore */}
       <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={lang} />
-      <TrustedBy />
       {/* @ts-ignore */}
-      <PortfolioPreview lang={lang} limit={6} />
-      <ProcessSection />
-      <Testimonials />
+      <TrustedBy dictionary={dictionary.trustedBy} />
       {/* @ts-ignore */}
-      <CTASection lang={lang} />
+      <PortfolioPreview lang={lang} limit={6} dictionary={dictionary.portfolio} />
+      <ProcessSection dictionary={dictionary.process} />
+      {/* @ts-ignore */}
+      <Testimonials dictionary={dictionary.testimonials} />
+      {/* @ts-ignore */}
+      <CTASection lang={lang} dictionary={dictionary.cta} />
     </main>
   )
 }

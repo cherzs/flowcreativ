@@ -146,5 +146,171 @@
             "success": "Thank you! We'll get back to you within 24 hours.",
             "error": "Failed to send message. Please try again."
         }
+    },
+    "portfolio": {
+        "sectionTitle": "Selected Work",
+        "sectionHighlight": "Portfolio Highlights",
+        "labels": {
+            "visitWebsite": "Visit Website"
+        },
+        "projects": {
+            "saasquatch": {
+                "title": "SaaSquatchLeads",
+                "industry": "SaaS / Dashboard",
+                "description": "Lead generation SaaS with dashboard, automations, and modern onboarding flows."
+            },
+            "tradingJournal": {
+                "title": "Trading Journal Web App",
+                "industry": "Trading Tools",
+                "description": "Browser-based trading journal to log, review, and analyze trading performance."
+            },
+            "kubeletto": {
+                "title": "Kubeletto Website",
+                "industry": "Company / Client Website",
+                "description": "Company website for Kubeletto with clean, product-focused layout."
+            },
+            "tradingAssistance": {
+                "title": "Trading Assistance Tool",
+                "industry": "Trading Tools",
+                "description": "Web-based trading assistance interface to support decision-making workflows."
+            },
+            "odooErp": {
+                "title": "Odoo ERP Instance",
+                "industry": "ERP / Odoo Implementation",
+                "description": "Self-hosted Odoo deployment tailored for business operations."
+            },
+            "odooFms": {
+                "title": "Odoo FMS Implementation",
+                "industry": "ERP / Odoo Implementation",
+                "description": "Fleet Management System built on Odoo with custom flows."
+            },
+            "chillin": {
+                "title": "CHILL.IN Website Concept",
+                "industry": "Brand & Landing Page Concept",
+                "description": "CHILL.IN brand-first website exploration focusing on visual storytelling."
+            },
+            "emberRoastery": {
+                "title": "Ember Roastery Landing Page",
+                "industry": "Landing Page / Brand Concept",
+                "description": "Landing page exploration for a specialty coffee roastery brand."
+            },
+            "luxuryGlamping": {
+                "title": "Luxury Glamping UI",
+                "industry": "Landing Page / Brand Concept",
+                "description": "Luxury glamping booking experience UI with premium visual direction."
+            }
+        }
+    },
+    "trustedBy": {
+        "deliveredTitle": "Trusted by teams we delivered for",
+        "contributedTitle": "Contributed by our engineers",
+        "contributedDescription": "For Patra Jasa (E-Inspection, House Office, Property Development, Property Investment, E-Asset, FMS), CIMB Niaga, Telkomsel By.U, Sinarmas, and Saasquatch.",
+        "footerText": "This blend of direct delivery and enterprise-grade experience shapes every engagement."
+    },
+    "process": {
+        "titleStart": "How we",
+        "titleHighlight": "work",
+        "description": "Our proven process ensures successful delivery every time.",
+        "learnMore": "Learn more",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Discover",
+                "description": "Understanding your business goals, challenges, and technical requirements"
+            },
+            {
+                "number": "02",
+                "title": "Design",
+                "description": "Creating user-centered designs and technical architecture"
+            },
+            {
+                "number": "03",
+                "title": "Develop",
+                "description": "Building your solution with agile methodology and best practices"
+            },
+            {
+                "number": "04",
+                "title": "Deploy",
+                "description": "Launching your product with thorough testing and quality assurance"
+            },
+            {
+                "number": "05",
+                "title": "Support",
+                "description": "Ongoing maintenance, updates, and technical support"
+            }
+        ]
+    },
+    "testimonials": {
+        "label": "Testimonials",
+        "titleStart": "Client",
+        "titleHighlight": "Stories",
+        "description": "Hear what our clients say about working with us",
+        "items": [
+            {
+                "quote": "TechForge transformed our outdated systems into a modern, scalable platform. Their expertise in cloud architecture saved us 40% in operational costs.",
+                "author": "Sarah Johnson",
+                "role": "CTO, RetailCorp"
+            },
+            {
+                "quote": "The team delivered our mobile app ahead of schedule with exceptional quality. Their agile approach kept us informed every step of the way.",
+                "author": "Michael Chen",
+                "role": "Founder, HealthTech Solutions"
+            },
+            {
+                "quote": "Outstanding Odoo implementation! They understood our complex workflows and delivered a solution that improved efficiency by 60%.",
+                "author": "Emma Williams",
+                "role": "Operations Director, ManufacturePro"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to start your project?",
+        "description": "Let's build something amazing together. Get in touch for a free consultation and quote.",
+        "cardTitle": "Start a Project",
+        "cardDescription": "Tell us about your goals and we will get back within 24 hours.",
+        "primary": "Get a Free Quote",
+        "secondary": "Schedule a Call"
+    },
+    "portfolioPage": {
+        "title": "Selected Work",
+        "description": "A showcase of our recent projects and success stories."
+    },
+    "aboutPage": {
+        "title": "About FlowCreativ",
+        "description": "We are a team of digital innovators dedicated to shrinking the gap between technology and business growth.",
+        "missionTitle": "Our Mission",
+        "missionDescription": "To empower businesses with scalable, high-performance digital solutions that drive real results.",
+        "visionTitle": "Our Vision",
+        "visionDescription": "To be the go-to partner for companies looking to transform their digital presence through design and technology.",
+        "teamTitle": "People Behind FlowCreativ",
+        "teamDescription": "Meet the engineers and consultants behind our delivery.",
+        "ctaButton": "Work With Us"
+    },
+    "blogPage": {
+        "title": "Our Blog",
+        "description": "Insights, updates, and news from the FlowCreativ team.",
+        "comingSoonTitle": "Coming Soon",
+        "comingSoonDescription": "We are currently crafting high-quality articles for you. Stay tuned!"
+    },
+    "faqPage": {
+        "title": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "How long does a website project take?",
+                "answer": "Typically, a standard company profile website takes 1-2 weeks, while more complex e-commerce or custom web applications can take 4-8 weeks depending on the requirements."
+            },
+            {
+                "question": "Do you provide hosting and domain?",
+                "answer": "Yes, we can handle the entire setup including domain registration and cloud hosting configuration so you don't have to worry about the technical details."
+            },
+            {
+                "question": "Is the design mobile-friendly?",
+                "answer": "Absolutely. All our designs are \"Mobile-First\" and fully responsive, ensuring they look perfect on smartphones, tablets, and desktops."
+            },
+            {
+                "question": "What is your payment structure?",
+                "answer": "We typically require a 50% deposit to start the project, with the remaining 50% due upon completion and your final approval before launch."
+            }
+        ]
     }
 }

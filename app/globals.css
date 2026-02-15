@@ -168,7 +168,8 @@
     align-items: center;
     width: max-content;
     gap: 2.5rem;
-    animation: trusted-marquee 20s linear infinite;
+    animation: trusted-marquee var(--marquee-duration, 20s) linear infinite;
+    will-change: transform;
   }
 
   .trusted-marquee-track.reverse {

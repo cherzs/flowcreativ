@@ -12,7 +12,8 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
             {/* Reusing the services component but we could make a detailed one later */}
             <ServicesOverview dictionary={dictionary.services} />
 
-            <CTASection lang={lang} />
-        </main >
+            {/* @ts-ignore */}
+            <CTASection lang={lang} dictionary={dictionary.cta} />
+        </main>
     )
 }

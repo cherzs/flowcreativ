@@ -5,72 +5,67 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
-export default function PortfolioPreview({ lang, limit }: { lang: string; limit?: number }) {
-  const projects = [
+export default function PortfolioPreview({
+  lang,
+  limit,
+  dictionary,
+}: {
+  lang: string
+  limit?: number
+  dictionary: any
+}) {
+  const projectsData = [
     {
-      title: "SaaSquatchLeads",
-      industry: "SaaS / Dashboard",
-      description: "Lead generation SaaS with dashboard, automations, and modern onboarding flows.",
+      key: "saasquatch",
       image: "/SaasquatchLeads.png",
       href: "https://www.saasquatchleads.com",
     },
     {
-      title: "Trading Journal Web App",
-      industry: "Trading Tools",
-      description: "Browser-based trading journal to log, review, and analyze trading performance.",
+      key: "tradingJournal",
       image: "/tradingjournal.png",
       href: "https://trading-journal-nu-brown.vercel.app",
     },
     {
-      title: "Kubeletto Website",
-      industry: "Company / Client Website",
-      description: "Company website for Kubeletto with clean, product-focused layout.",
+      key: "kubeletto",
       image: "/Kubeletto.png",
       href: "https://kubeletto.com",
     },
     {
-      title: "Trading Assistance Tool",
-      industry: "Trading Tools",
-      description: "Web-based trading assistance interface to support decision-making workflows.",
+      key: "tradingAssistance",
       image: "/tradingassis.png",
       href: "https://trading-assistance.vercel.app",
     },
     {
-      title: "Odoo ERP Instance",
-      industry: "ERP / Odoo Implementation",
-      description: "Self-hosted Odoo deployment tailored for business operations.",
+      key: "odooErp",
       image: "/webportalodoo.png",
       href: "http://77.237.240.156:8069",
     },
     {
-      title: "Odoo FMS Implementation",
-      industry: "ERP / Odoo Implementation",
-      description: "Fleet Management System built on Odoo with custom flows.",
+      key: "odooFms",
       image: "/odooinspectportal.png",
       href: "https://e-inspection.patra-jasa.com/fms",
     },
     {
-      title: "CHILL.IN Website Concept",
-      industry: "Brand & Landing Page Concept",
-      description: "CHILL.IN brand-first website exploration focusing on visual storytelling.",
+      key: "chillin",
       image: "/Chill_in.png",
       href: "https://v0-chill-in-website-design-vu.vercel.app",
     },
     {
-      title: "Ember Roastery Landing Page",
-      industry: "Landing Page / Brand Concept",
-      description: "Landing page exploration for a specialty coffee roastery brand.",
+      key: "emberRoastery",
       image: "/emberroas.png",
       href: "https://v0-ember-roastery-landing-page.vercel.app",
     },
     {
-      title: "Luxury Glamping UI",
-      industry: "Landing Page / Brand Concept",
-      description: "Luxury glamping booking experience UI with premium visual direction.",
+      key: "luxuryGlamping",
       image: "/serene.png",
       href: "https://luxury-glamping-ui.vercel.app/",
     },
   ]
+
+  const projects = projectsData.map((project) => ({
+    ...project,
+    ...dictionary.projects[project.key],
+  }))
 
   const items = limit ? projects.slice(0, limit) : projects
   const [activeIndex, setActiveIndex] = useState(0)
@@ -104,8 +99,8 @@ export default function PortfolioPreview({ lang, limit }: { lang: string; limit?
 
       <div className="relative container mx-auto px-4">
         <div className="mb-10">
-          <p className="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-4">Selected Work</p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">Portfolio Highlights</h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-4">{dictionary.sectionStart}</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">{dictionary.sectionHighlight}</h2>
         </div>
 
         <div className="grid lg:grid-cols-[1.1fr_1.6fr] gap-12 items-center">
@@ -128,7 +123,7 @@ export default function PortfolioPreview({ lang, limit }: { lang: string; limit?
               target="_blank"
               className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-neutral-500 hover:text-neutral-900 transition-colors"
             >
-              Visit Website <ArrowRight className="h-4 w-4" />
+              {dictionary.labels.visitWebsite} <ArrowRight className="h-4 w-4" />
             </Link>
 
             <div className="flex items-center gap-4 pt-6">
@@ -163,9 +158,8 @@ export default function PortfolioPreview({ lang, limit }: { lang: string; limit?
           <div className="relative">
             <div
               key={`${current.title}-${activeIndex}`}
-              className={`relative rounded-2xl overflow-hidden shadow-xl border border-neutral-200 ${
-                direction === "next" ? "portfolio-slide-in-right" : "portfolio-slide-in-left"
-              }`}
+              className={`relative rounded-2xl overflow-hidden shadow-xl border border-neutral-200 ${direction === "next" ? "portfolio-slide-in-right" : "portfolio-slide-in-left"
+                }`}
             >
               <Image
                 src={current.image}
