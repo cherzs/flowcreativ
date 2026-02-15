@@ -104,29 +104,31 @@ export default function PortfolioPreview({
         </div>
 
         <div className="grid lg:grid-cols-[1.1fr_1.6fr] gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center gap-6 text-neutral-500 text-sm uppercase tracking-[0.3em]">
-              <span className="text-purple-600 font-semibold">{String(activeIndex + 1).padStart(2, "0")}</span>
-              <span className="h-px w-10 bg-neutral-300" />
-              <span>{current.industry}</span>
+          <div className="relative md:min-h-[520px]">
+            <div className="space-y-6 md:pb-20">
+              <div className="flex items-center gap-6 text-neutral-500 text-sm uppercase tracking-[0.3em]">
+                <span className="text-purple-600 font-semibold">{String(activeIndex + 1).padStart(2, "0")}</span>
+                <span className="h-px w-10 bg-neutral-300" />
+                <span>{current.industry}</span>
+              </div>
+
+              <h3 className="text-5xl md:text-6xl font-semibold leading-tight">
+                <span className="block text-neutral-900">{titlePrimary}</span>
+                {titleSecondary ? <span className="block text-neutral-400">{titleSecondary}</span> : null}
+              </h3>
+
+              <p className="text-neutral-600 max-w-xl leading-relaxed">{current.description}</p>
+
+              <Link
+                href={current.href}
+                target="_blank"
+                className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-neutral-500 hover:text-neutral-900 transition-colors"
+              >
+                {dictionary.labels.visitWebsite} <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
 
-            <h3 className="text-5xl md:text-6xl font-semibold leading-tight">
-              <span className="block text-neutral-900">{titlePrimary}</span>
-              {titleSecondary ? <span className="block text-neutral-400">{titleSecondary}</span> : null}
-            </h3>
-
-            <p className="text-neutral-600 max-w-xl leading-relaxed">{current.description}</p>
-
-            <Link
-              href={current.href}
-              target="_blank"
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-neutral-500 hover:text-neutral-900 transition-colors"
-            >
-              {dictionary.labels.visitWebsite} <ArrowRight className="h-4 w-4" />
-            </Link>
-
-            <div className="flex items-center gap-4 pt-6">
+            <div className="flex items-center gap-4 pt-6 md:pt-0 md:absolute md:bottom-0 md:left-0">
               <button
                 type="button"
                 onClick={handlePrev}

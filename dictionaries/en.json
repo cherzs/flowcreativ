@@ -82,6 +82,69 @@
             }
         ]
     },
+    "pricing": {
+        "label": "Pricing",
+        "title": "Core Packages for Every Business Stage",
+        "subtitle": "Flexible solutions for SMEs, growing companies, and enterprises that need scalable, integrated systems.",
+        "trustLine": "Trusted by startups, SMEs, and enterprise organizations to build scalable, reliable business systems.",
+        "smeBadge": "Supporting SME Digital Transformation",
+        "note": "Estimates vary by scope and complexity. Odoo licenses billed separately.",
+        "priceNote": "Starting from",
+        "cta": "Schedule a Consultation",
+        "footer": "Need a custom scope? We'll craft a tailored estimate and delivery plan.",
+        "items": [
+            {
+                "title": "Website Systems",
+                "description": "Professional websites designed for performance, scalability, and integration readiness.",
+                "price": "IDR 2.5M",
+                "tag": "WEBSITE",
+                "details": [
+                    "1–3 pages",
+                    "Responsive design",
+                    "WhatsApp integration",
+                    "Basic admin/contact form"
+                ]
+            },
+            {
+                "title": "Odoo ERP Systems",
+                "description": "Structured Odoo setup to streamline core business operations.",
+                "price": "IDR 8M",
+                "tag": "ODOO ERP",
+                "badge": "Core Service",
+                "details": [
+                    "Odoo Community setup",
+                    "1 module (Sales/Invoice/Inventory)",
+                    "Basic configuration",
+                    "Basic training"
+                ]
+            },
+            {
+                "title": "Apps & Internal Systems",
+                "description": "Internal apps and dashboards to support business workflows.",
+                "price": "IDR 12M",
+                "tag": "APPS",
+                "details": [
+                    "Simple internal web app",
+                    "Operational dashboard",
+                    "Basic backend",
+                    "Single feature scope"
+                ]
+            },
+            {
+                "title": "Enterprise & AI Integration",
+                "description": "Enterprise‑grade integrations and automation for scale.",
+                "price": "IDR 25M",
+                "tag": "ENTERPRISE",
+                "badge": "Premium",
+                "details": [
+                    "System integration",
+                    "Automation setup",
+                    "ERP or app integration",
+                    "Basic AI automation"
+                ]
+            }
+        ]
+    },
     "footer": {
         "description": "Helping businesses grow with scalable and modern digital solutions.",
         "quickLinks": "Quick Links",
@@ -96,7 +159,7 @@
             "title": "Contact Information",
             "email": "sales@flowcreativ.com",
             "phone": "+62 851-6191-7939",
-            "location": "Sleman, Yogyakarta"
+            "location": "Sleman, Yogyakarta - Indonesia"
         },
         "hours": {
             "title": "Office Hours",

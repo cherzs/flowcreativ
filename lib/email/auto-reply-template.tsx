@@ -95,7 +95,7 @@ export function getAutoReplyEmailHtml(data: ContactFormData, lang: 'en' | 'id' =
             <td style="padding: 20px 30px; background-color: #f9fafb; border-radius: 0 0 8px 8px; border-top: 1px solid #e5e7eb; text-align: center;">
               <p style="margin: 0 0 8px; color: #6b7280; font-size: 14px;">
                 <strong>FlowCreativ</strong><br>
-                Sleman, Yogyakarta
+                Sleman, Yogyakarta - Indonesia
               </p>
               <p style="margin: 0; color: #6b7280; font-size: 12px;">
                 <a href="mailto:sales@flowcreativ.com" style="color: #6366f1; text-decoration: none;">sales@flowcreativ.com</a> •
@@ -171,7 +171,7 @@ ${t.regards}
 
 ---
 FlowCreativ
-Sleman, Yogyakarta
+Sleman, Yogyakarta - Indonesia
 sales@flowcreativ.com • +62 851-6191-7939
   `.trim()
 }
