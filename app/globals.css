@@ -4,25 +4,24 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Apollo-inspired dark theme with purple/pink accents */
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.98 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0 0);
   --primary: oklch(0.55 0.25 280);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.2 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.2 0 0);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.55 0.25 320);
-  --accent-foreground: oklch(0.98 0 0);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.18 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.92 0 0);
+  --accent-foreground: oklch(0.18 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.2 0 0);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.92 0 0);
   --ring: oklch(0.55 0.25 280);
   --chart-1: oklch(0.55 0.25 280);
   --chart-2: oklch(0.6 0.25 320);
@@ -76,7 +75,7 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  --font-sans: "Inter", "Inter Fallback";
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -120,7 +119,79 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    background-color: white;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@keyframes trusted-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes portfolio-slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes portfolio-slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .trusted-marquee {
+    overflow: hidden;
+  }
+
+  .trusted-marquee-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 2.5rem;
+    animation: trusted-marquee 20s linear infinite;
+  }
+
+  .trusted-marquee-track.reverse {
+    animation-direction: reverse;
+  }
+
+  .portfolio-slide-in-right {
+    animation: portfolio-slide-in-right 450ms ease;
+  }
+
+  .portfolio-slide-in-left {
+    animation: portfolio-slide-in-left 450ms ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trusted-marquee-track {
+    animation: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .trusted-marquee-track {
+    gap: 4rem;
   }
 }

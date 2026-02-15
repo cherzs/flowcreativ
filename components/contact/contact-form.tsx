@@ -120,7 +120,7 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
               <FormControl>
                 <Input
                   placeholder={dictionary.fields.fullName.placeholder}
-                  className="bg-white/5 border-white/10 focus:border-purple-500/50"
+                  className="bg-white border-neutral-300 focus:border-purple-500/50"
                   disabled={isSubmitting}
                   {...field}
                 />
@@ -141,7 +141,7 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
                 <Input
                   type="email"
                   placeholder={dictionary.fields.email.placeholder}
-                  className="bg-white/5 border-white/10 focus:border-purple-500/50"
+                  className="bg-white border-neutral-300 focus:border-purple-500/50"
                   disabled={isSubmitting}
                   {...field}
                 />
@@ -162,7 +162,7 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
                 <Input
                   type="tel"
                   placeholder={dictionary.fields.phone.placeholder}
-                  className="bg-white/5 border-white/10 focus:border-purple-500/50"
+                  className="bg-white border-neutral-300 focus:border-purple-500/50"
                   disabled={isSubmitting}
                   {...field}
                 />
@@ -182,7 +182,7 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
               <FormControl>
                 <Input
                   placeholder={dictionary.fields.company.placeholder}
-                  className="bg-white/5 border-white/10 focus:border-purple-500/50"
+                  className="bg-white border-neutral-300 focus:border-purple-500/50"
                   disabled={isSubmitting}
                   {...field}
                 />
@@ -205,13 +205,17 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
                 disabled={isSubmitting}
               >
                 <FormControl>
-                  <SelectTrigger className="bg-white/5 border-white/10 focus:border-purple-500/50">
+                  <SelectTrigger className="bg-white border-neutral-300 text-neutral-700 placeholder:text-neutral-400 focus:border-purple-500/50 rounded-full h-12 px-4">
                     <SelectValue placeholder={dictionary.fields.service.placeholder} />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-gray-900 border-white/10">
+                <SelectContent className="bg-white border-neutral-200 text-neutral-800 rounded-xl shadow-lg">
                   {Object.entries(dictionary.fields.service.options).map(([value, label]) => (
-                    <SelectItem key={value} value={value}>
+                    <SelectItem
+                      key={value}
+                      value={value}
+                      className="text-neutral-700 rounded-md px-3 py-2 data-[highlighted]:bg-purple-600 data-[highlighted]:text-white data-[state=checked]:bg-purple-600 data-[state=checked]:text-white"
+                    >
                       {label}
                     </SelectItem>
                   ))}
@@ -232,7 +236,7 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
               <FormControl>
                 <Textarea
                   placeholder={dictionary.fields.message.placeholder}
-                  className="min-h-[150px] bg-white/5 border-white/10 focus:border-purple-500/50 resize-none"
+                  className="min-h-[150px] bg-white border-neutral-300 focus:border-purple-500/50 resize-none"
                   disabled={isSubmitting}
                   {...field}
                 />
@@ -245,7 +249,8 @@ export function ContactForm({ dictionary, lang }: ContactFormProps) {
         {/* Submit Button */}
         <Button
           type="submit"
-          className="w-full bg-purple-600 hover:bg-purple-700 text-white h-11 text-base"
+          variant="pill"
+          className="w-full h-12 text-base"
           disabled={isSubmitting}
         >
           {isSubmitting ? (

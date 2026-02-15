@@ -1,175 +1,186 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+"use client"
+
+import { useMemo, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 
 export default function PortfolioPreview({ lang, limit }: { lang: string; limit?: number }) {
   const projects = [
     {
-      title: "Flowreativ Website",
-      industry: "Company / Client Website",
-      description: "Marketing website for Flowreativ with multi-language support and modern brand experience.",
-      tech: ["Next.js", "Tailwind CSS", "Vercel"],
-      image: "",
-      href: "https://flowreativ.com/en",
-    },
-    {
       title: "SaaSquatchLeads",
       industry: "SaaS / Dashboard",
       description: "Lead generation SaaS with dashboard, automations, and modern onboarding flows.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL"],
-      image: "",
+      image: "/SaasquatchLeads.png",
       href: "https://www.saasquatchleads.com",
     },
     {
       title: "Trading Journal Web App",
       industry: "Trading Tools",
       description: "Browser-based trading journal to log, review, and analyze trading performance.",
-      tech: ["Next.js", "React", "Vercel"],
-      image: "",
+      image: "/tradingjournal.png",
       href: "https://trading-journal-nu-brown.vercel.app",
     },
     {
       title: "Kubeletto Website",
       industry: "Company / Client Website",
       description: "Company website for Kubeletto with clean, product-focused layout.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
+      image: "/Kubeletto.png",
       href: "https://kubeletto.com",
     },
     {
       title: "Trading Assistance Tool",
       industry: "Trading Tools",
       description: "Web-based trading assistance interface to support decision-making workflows.",
-      tech: ["Next.js", "React"],
-      image: "",
+      image: "/tradingassis.png",
       href: "https://trading-assistance.vercel.app",
     },
     {
       title: "Odoo ERP Instance",
       industry: "ERP / Odoo Implementation",
       description: "Self-hosted Odoo deployment tailored for business operations.",
-      tech: ["Odoo", "PostgreSQL"],
-      image: "",
+      image: "/webportalodoo.png",
       href: "http://77.237.240.156:8069",
     },
     {
       title: "Odoo FMS Implementation",
       industry: "ERP / Odoo Implementation",
       description: "Fleet Management System built on Odoo with custom flows.",
-      tech: ["Odoo", "Python"],
-      image: "",
-      href: "http://odoo-alb-1817820945.ap-southeast-3.elb.amazonaws.com:8018/fms",
+      image: "/odooinspectportal.png",
+      href: "https://e-inspection.patra-jasa.com/fms",
     },
     {
       title: "CHILL.IN Website Concept",
       industry: "Brand & Landing Page Concept",
       description: "CHILL.IN brand-first website exploration focusing on visual storytelling.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
+      image: "/Chill_in.png",
       href: "https://v0-chill-in-website-design-vu.vercel.app",
-    },
-    {
-      title: "CHILL.IN Landing Page v2",
-      industry: "Brand & Landing Page Concept",
-      description: "Alternative CHILL.IN landing page layout exploring different hero and CTA structure.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
-      href: "https://v0-chill-in-landing-page-two.vercel.app",
-    },
-    {
-      title: "CHILL.IN Website Design",
-      industry: "Brand & Landing Page Concept",
-      description: "Another CHILL.IN visual direction focusing on typography and layout studies.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
-      href: "https://v0-chill-in-website-design.vercel.app",
     },
     {
       title: "Ember Roastery Landing Page",
       industry: "Landing Page / Brand Concept",
       description: "Landing page exploration for a specialty coffee roastery brand.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
+      image: "/emberroas.png",
       href: "https://v0-ember-roastery-landing-page.vercel.app",
-    },
-    {
-      title: "Flowcreativ Coffee Landing",
-      industry: "Landing Page / Brand Concept",
-      description: "Playful landing page concept for Flowcreativ coffee branding.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
-      href: "https://v0-flowcreativcoffe.vercel.app",
     },
     {
       title: "Luxury Glamping UI",
       industry: "Landing Page / Brand Concept",
       description: "Luxury glamping booking experience UI with premium visual direction.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
+      image: "/serene.png",
       href: "https://luxury-glamping-ui.vercel.app/",
     },
-    {
-      title: "STS K9 Website Clone",
-      industry: "UI Study / Clone",
-      description: "UI clone study to reverse-engineer layout, spacing, and typography.",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "",
-      href: "https://v0-stsk9-website-clone.vercel.app",
-    }
   ]
 
-  const visibleProjects = limit ? projects.slice(0, limit) : projects
+  const items = limit ? projects.slice(0, limit) : projects
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [direction, setDirection] = useState<"next" | "prev">("next")
+  const current = items[activeIndex]
+
+  const titleParts = useMemo(() => current.title.split(" "), [current.title])
+  const titlePrimary = titleParts[0]
+  const titleSecondary = titleParts.slice(1).join(" ")
+
+  const handleNext = () => {
+    setDirection("next")
+    setActiveIndex((index) => (index + 1) % items.length)
+  }
+
+  const handlePrev = () => {
+    setDirection("prev")
+    setActiveIndex((index) => (index - 1 + items.length) % items.length)
+  }
 
   return (
-    <section className="bg-black py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-            FEATURED{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">PROJECTS</span>
-          </h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Delivering impactful solutions that drive business growth
-          </p>
+    <section className="relative bg-white text-neutral-900 py-24 border-y border-neutral-200 overflow-hidden">
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)",
+          backgroundSize: "44px 44px",
+        }}
+      />
+
+      <div className="relative container mx-auto px-4">
+        <div className="mb-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-4">Selected Work</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">Portfolio Highlights</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {visibleProjects.map((project) => (
-            <Link key={project.title} href={project.href || `/${lang}/portfolio`} target="_blank">
-              <Card className="bg-white/5 border-white/10 overflow-hidden hover:bg-white/10 transition-all group cursor-pointer">
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
-                    {project.industry}
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-white text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-white/60 text-sm mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span key={tech} className="text-xs bg-white/5 text-white/60 px-3 py-1 rounded-full">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+        <div className="grid lg:grid-cols-[1.1fr_1.6fr] gap-12 items-center">
+          <div className="space-y-6">
+            <div className="flex items-center gap-6 text-neutral-500 text-sm uppercase tracking-[0.3em]">
+              <span className="text-purple-600 font-semibold">{String(activeIndex + 1).padStart(2, "0")}</span>
+              <span className="h-px w-10 bg-neutral-300" />
+              <span>{current.industry}</span>
+            </div>
+
+            <h3 className="text-5xl md:text-6xl font-semibold leading-tight">
+              <span className="block text-neutral-900">{titlePrimary}</span>
+              {titleSecondary ? <span className="block text-neutral-400">{titleSecondary}</span> : null}
+            </h3>
+
+            <p className="text-neutral-600 max-w-xl leading-relaxed">{current.description}</p>
+
+            <Link
+              href={current.href}
+              target="_blank"
+              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-neutral-500 hover:text-neutral-900 transition-colors"
+            >
+              Visit Website <ArrowRight className="h-4 w-4" />
             </Link>
-          ))}
-        </div>
 
-        <div className="text-center">
-          <Link href={`/${lang}/portfolio`}>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8">View All Projects</Button>
-          </Link>
+            <div className="flex items-center gap-4 pt-6">
+              <button
+                type="button"
+                onClick={handlePrev}
+                className="h-12 w-12 rounded-lg border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 transition-colors"
+                aria-label="Previous project"
+              >
+                <ArrowLeft className="h-5 w-5 mx-auto" />
+              </button>
+              <button
+                type="button"
+                onClick={handleNext}
+                className="h-12 w-12 rounded-lg border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 transition-colors"
+                aria-label="Next project"
+              >
+                <ArrowRight className="h-5 w-5 mx-auto" />
+              </button>
+
+              <div className="flex items-center gap-2 ml-2">
+                {items.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`h-2 w-2 rounded-full ${index === activeIndex ? "bg-purple-600" : "bg-neutral-300"}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div
+              key={`${current.title}-${activeIndex}`}
+              className={`relative rounded-2xl overflow-hidden shadow-xl border border-neutral-200 ${
+                direction === "next" ? "portfolio-slide-in-right" : "portfolio-slide-in-left"
+              }`}
+            >
+              <Image
+                src={current.image}
+                alt={current.title}
+                width={1200}
+                height={800}
+                className="w-full h-[360px] md:h-[420px] object-cover"
+                priority
+              />
+            </div>
+
+            <div className="absolute bottom-4 right-4 text-xs uppercase tracking-[0.35em] text-neutral-500">
+              {String(activeIndex + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
+            </div>
+          </div>
         </div>
       </div>
     </section>

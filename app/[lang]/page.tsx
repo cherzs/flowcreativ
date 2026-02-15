@@ -17,11 +17,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
     <main className="min-h-screen">
       {/* @ts-ignore */}
       <Hero dictionary={dictionary.hero} lang={lang} />
-      <TrustedBy />
       {/* @ts-ignore */}
       <ServicesOverview dictionary={dictionary.services} />
       {/* @ts-ignore */}
       <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={lang} />
+      <TrustedBy />
       {/* @ts-ignore */}
       <PortfolioPreview lang={lang} limit={6} />
       <ProcessSection />

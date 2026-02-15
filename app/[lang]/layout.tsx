@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "../globals.css"
 import Header from "@/components/header"
@@ -8,8 +8,8 @@ import Footer from "@/components/footer"
 import { i18n, type Locale } from "@/i18n-config"
 import { getDictionary } from "@/lib/get-dictionary"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "FlowCreativ - IT Consulting & Development Solutions",
@@ -37,12 +37,12 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`font-sans antialiased`}>
+      <body className={`${inter.variable} ${_geistMono.variable} font-sans antialiased`}>
         {/* @ts-ignore */}
         <Header dictionary={dictionary.navigation} lang={lang} />
         {children}
         {/* @ts-ignore */}
-        <Footer dictionary={dictionary.footer} lang={lang} />
+        <Footer dictionary={dictionary.footer} contact={dictionary.contact} lang={lang} />
         <Analytics />
       </body>
     </html>

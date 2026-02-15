@@ -28,28 +28,35 @@ export default function ProcessSection() {
   ]
 
   return (
-    <section className="bg-gradient-to-br from-black via-purple-950/10 to-black py-24 border-y border-white/10">
+    <section className="bg-white py-24 border-b border-neutral-200">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-            HOW WE{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">WORK</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-14">
+          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">
+            How we{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">work</span>.
           </h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Our proven process ensures successful delivery every time
+          <p className="text-neutral-600 text-base md:text-lg max-w-xl">
+            Our proven process ensures successful delivery every time.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          {steps.map((step, index) => (
-            <div key={step.number} className="relative">
-              <div className="text-6xl font-black text-white/10 mb-4">{step.number}</div>
-              <h3 className="text-white text-2xl font-bold mb-3">{step.title}</h3>
-              <p className="text-white/60 text-sm leading-relaxed">{step.description}</p>
-
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-purple-600 to-transparent" />
-              )}
+        <div className="divide-y divide-neutral-200 border-t border-neutral-200">
+          {steps.map((step) => (
+            <div
+              key={step.number}
+              className="py-8 flex flex-col md:flex-row md:items-center gap-6"
+            >
+              <div className="text-sm font-medium text-neutral-400 w-12">{step.number}</div>
+              <div className="flex-1">
+                <h3 className="text-neutral-900 text-2xl font-semibold mb-2">{step.title}</h3>
+                <p className="text-neutral-600">{step.description}</p>
+              </div>
+              <div className="flex items-center gap-3 text-neutral-500">
+                <span className="text-sm">Learn more</span>
+                <span className="h-10 w-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-700">
+                  →
+                </span>
+              </div>
             </div>
           ))}
         </div>

@@ -23,27 +23,30 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="bg-black py-24">
+    <section className="bg-white py-24 border-b border-neutral-200">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-            CLIENT{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              TESTIMONIALS
+        <div className="mb-12">
+          <p className="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-4">Testimonials</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
+            Client{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
+              Stories
             </span>
           </h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">Hear what our clients say about working with us</p>
+          <p className="text-neutral-600 text-base md:text-lg max-w-2xl">
+            Hear what our clients say about working with us
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-white/5 border-white/10">
+            <Card key={index} className="bg-white border-neutral-200 shadow-sm">
               <CardContent className="p-8">
-                <div className="text-purple-400 text-4xl mb-4">"</div>
-                <p className="text-white/80 mb-6 leading-relaxed">{testimonial.quote}</p>
+                <div className="text-purple-500 text-4xl mb-4">"</div>
+                <p className="text-neutral-700 mb-6 leading-relaxed">{testimonial.quote}</p>
                 <div>
-                  <p className="text-white font-semibold">{testimonial.author}</p>
-                  <p className="text-white/60 text-sm">{testimonial.role}</p>
+                  <p className="text-neutral-900 font-semibold">{testimonial.author}</p>
+                  <p className="text-neutral-500 text-sm">{testimonial.role}</p>
                 </div>
               </CardContent>
             </Card>

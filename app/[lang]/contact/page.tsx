@@ -12,15 +12,15 @@ export default async function ContactPage({
   const dictionary = await getDictionary(lang)
 
   return (
-    <main className="min-h-screen pt-24 pb-12">
+    <main className="min-h-screen pt-24 pb-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-semibold text-neutral-900 mb-4">
               {dictionary.contact.title}
             </h1>
-            <p className="text-xl text-white/60">
+            <p className="text-xl text-neutral-600">
               {dictionary.contact.subtitle}
             </p>
           </div>
@@ -29,15 +29,15 @@ export default async function ContactPage({
             {/* Left Column: Contact Info */}
             <div className="space-y-8">
               {/* Contact Information */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Mail className="h-5 w-5 text-purple-400" />
+              <div className="p-6 rounded-2xl bg-white border border-neutral-200">
+                <h3 className="text-xl font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-purple-600" />
                   {dictionary.contact.info.title}
                 </h3>
-                <div className="space-y-4 text-white/80">
+                <div className="space-y-4 text-neutral-600">
                   <a
                     href={`mailto:${dictionary.contact.info.email}`}
-                    className="flex items-center gap-3 hover:text-purple-400 transition-colors"
+                    className="flex items-center gap-3 hover:text-purple-600 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     {dictionary.contact.info.email}
@@ -45,7 +45,7 @@ export default async function ContactPage({
                   <div className="flex items-center gap-3">
                     <a
                       href={`tel:${dictionary.contact.info.phone.replace(/\s/g, '')}`}
-                      className="flex items-center gap-3 hover:text-purple-400 transition-colors"
+                      className="flex items-center gap-3 hover:text-purple-600 transition-colors"
                     >
                       <Phone className="h-4 w-4" />
                       {dictionary.contact.info.phone}
@@ -68,23 +68,23 @@ export default async function ContactPage({
               </div>
 
               {/* Office Hours */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-white/10 backdrop-blur">
-                <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-purple-400" />
+              <div className="p-6 rounded-2xl bg-white border border-neutral-200">
+                <h3 className="text-xl font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+                  <Clock className="h-5 w-5 text-purple-600" />
                   {dictionary.contact.hours.title}
                 </h3>
-                <p className="text-white/60 mb-1">
+                <p className="text-neutral-600 mb-1">
                   {dictionary.contact.hours.weekdays}
                 </p>
-                <p className="text-white/60">
+                <p className="text-neutral-600">
                   {dictionary.contact.hours.weekends}
                 </p>
               </div>
             </div>
 
             {/* Right Column: Contact Form */}
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-              <h2 className="text-2xl font-bold mb-6">
+            <div className="p-8 rounded-2xl bg-white border border-neutral-200">
+              <h2 className="text-2xl font-semibold text-neutral-900 mb-6">
                 {dictionary.contact.form.title}
               </h2>
               <ContactForm dictionary={dictionary.contact.form} lang={lang} />

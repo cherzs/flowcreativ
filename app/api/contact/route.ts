@@ -11,8 +11,11 @@ import {
 } from '@/lib/email/auto-reply-template'
 import { z } from 'zod'
 
-// Initialize Resend
-const resend = new Resend(process.env.RESEND_API_KEY)
+function getResendClient() {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) return null
+  return new Resend(apiKey)
+}
 
 // Rate limiting: Simple in-memory store (use Redis in production)
 const rateLimit = new Map<string, { count: number; resetTime: number }>()
@@ -101,6 +104,17 @@ export async function POST(request: NextRequest) {
     // Get language from request (optional query param)
     const { searchParams } = new URL(request.url)
     const lang = searchParams.get('lang') === 'id' ? 'id' : 'en'
+
+    const resend = getResendClient()
+    if (!resend) {
+      return NextResponse.json(
+        {
+          error: 'Email service is not configured. Please contact us directly.',
+          code: 'EMAIL_NOT_CONFIGURED'
+        },
+        { status: 503 }
+      )
+    }
 
     // Email configuration
     const salesEmail = process.env.SALES_EMAIL || 'sales@flowcreativ.com'

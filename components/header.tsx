@@ -28,8 +28,9 @@ export default function Header({ dictionary, lang }: { dictionary: any; lang: st
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/80 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white/90 backdrop-blur-lg border-b border-neutral-200" : "bg-white"
+      }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href={`/${lang}`} className="flex items-center">
@@ -38,43 +39,98 @@ export default function Header({ dictionary, lang }: { dictionary: any; lang: st
             alt="FlowCreativ Logo"
             width={400}
             height={100}
-            className="h-16 md:h-24 w-auto object-contain"
+            className="h-12 md:h-16 w-auto object-contain invert"
             priority
           />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link href={`/${lang}`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.home}
           </Link>
-          <Link href={`/${lang}/about`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/about`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.about}
           </Link>
-          <Link href={`/${lang}/services`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/services`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.services}
           </Link>
-          <Link href={`/${lang}/portfolio`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/portfolio`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.portfolio}
           </Link>
-          <Link href={`/${lang}/blog`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/blog`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.blog}
           </Link>
-          <Link href={`/${lang}/faq`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/faq`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.faq}
           </Link>
-          <Link href={`/${lang}/contact`} className="text-sm text-white/80 hover:text-white transition-colors">
+          <Link
+            href={`/${lang}/contact`}
+            className={`text-sm tracking-wide transition-colors ${
+              "text-neutral-700 hover:text-neutral-900"
+            }`}
+          >
             {dictionary.contact}
           </Link>
         </nav>
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-2 text-sm font-medium">
-            <a href={switchLanguage("en")} className={`${lang === "en" ? "text-white" : "text-white/50 hover:text-white"}`}>EN</a>
-            <span className="text-white/20">|</span>
-            <a href={switchLanguage("id")} className={`${lang === "id" ? "text-white" : "text-white/50 hover:text-white"}`}>ID</a>
+            <a
+              href={switchLanguage("en")}
+              className={
+                lang === "en"
+                  ? "text-neutral-900"
+                  : "text-neutral-400 hover:text-neutral-900"
+              }
+            >
+              EN
+            </a>
+            <span className="text-neutral-300">|</span>
+            <a
+              href={switchLanguage("id")}
+              className={
+                lang === "id"
+                  ? "text-neutral-900"
+                  : "text-neutral-400 hover:text-neutral-900"
+              }
+            >
+              ID
+            </a>
           </div>
           <Link href={`/${lang}/contact`}>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6">{dictionary.getStarted}</Button>
+            <Button variant="pill" size="default" className="h-10 px-6">
+              {dictionary.getStarted}
+            </Button>
           </Link>
         </div>
       </div>
