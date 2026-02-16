@@ -1,4 +1,6 @@
-export default function ProcessSection({ dictionary }: { dictionary: any }) {
+import Link from "next/link"
+
+export default function ProcessSection({ dictionary, lang }: { dictionary: any; lang: string }) {
   const steps = dictionary.steps
 
   return (
@@ -28,12 +30,15 @@ export default function ProcessSection({ dictionary }: { dictionary: any }) {
                 <h3 className="text-neutral-900 text-2xl font-semibold mb-2">{step.title}</h3>
                 <p className="text-neutral-600">{step.description}</p>
               </div>
-              <div className="flex items-center gap-3 text-neutral-500">
+              <Link
+                href={`/${lang}/services`}
+                className="group inline-flex items-center gap-3 text-neutral-500 hover:text-neutral-900 transition-colors"
+              >
                 <span className="text-sm">{dictionary.learnMore}</span>
-                <span className="h-10 w-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-700">
+                <span className="h-10 w-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-700 group-hover:border-neutral-400 group-hover:text-neutral-900 transition-colors">
                   →
                 </span>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
