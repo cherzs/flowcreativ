@@ -10,11 +10,11 @@
         "getStarted": "Mulai Sekarang"
     },
     "hero": {
-        "titleStart": "Bangun Solusi Digital",
-        "titleHighlight": "Yang Skalabel",
-        "titleEnd": "Untuk Bisnis Anda",
-        "description": "Transformasikan bisnis Anda dengan teknologi berdampak tinggi. Kami solusi IT kelas enterprise, dari web development hingga implementasi ERP, yang dirancang untuk membantu Anda berkembang lebih cepat.",
-        "ctaPrimary": "Mari bicara",
+        "titleStart": "Sistem ERP & Otomasi",
+        "titleHighlight": "Untuk Perusahaan Bertumbuh",
+        "titleEnd": "Untuk Gantikan Proses Manual",
+        "description": "Kami membantu UMKM menstandarkan operasional, mengintegrasikan data, dan scale dengan Odoo ERP, automation, serta sistem kustom.",
+        "ctaPrimary": "Jadwalkan Discovery Call",
         "ctaSecondary": "Lihat Karya Kami",
         "badge": "Terbaik Untuk Inovasi 2024"
     },
@@ -85,14 +85,11 @@
     "tools": {
         "eyebrow": "Tools",
         "title": "ERP & Automation Intelligence Tools",
-        "subtitle": "Gunakan assessment tools kami untuk menganalisis kebutuhan bisnis Anda sebelum konsultasi.",
-        "items": [
-            {
-                "title": "Odoo Module Recommender",
-                "description": "Temukan modul Odoo prioritas berdasarkan industri, skala bisnis, dan bottleneck utama Anda.",
-                "cta": "Coba Sekarang",
-                "href": "/tools/odoo-module-recommender"
-            },
+        "subtitle": "Analisis kebutuhan bisnis Anda sebelum konsultasi. Gunakan assessment tools gratis kami.",
+        "exploreDescription": "Butuh framework yang lebih lengkap? Jelajahi full assessment suite untuk menentukan titik mulai paling tepat.",
+        "exploreCta": "Jelajahi Full Assessment Suite",
+        "exploreHref": "/tools",
+        "featuredItems": [
             {
                 "title": "ERP Readiness Checker",
                 "description": "Evaluasi kesiapan proses, data, dan tim Anda sebelum implementasi ERP.",
@@ -106,16 +103,162 @@
                 "href": "/tools/automation-roi-calculator"
             },
             {
-                "title": "Workflow Efficiency Analyzer",
-                "description": "Analisis tingkat inefficiency workflow operasional untuk menemukan bottleneck utama proses bisnis.",
+                "title": "ERP Cost Estimator",
+                "description": "Dapatkan estimasi kasar biaya dan durasi implementasi ERP berdasarkan kompleksitas organisasi Anda.",
                 "cta": "Coba Sekarang",
-                "href": "/tools/workflow-efficiency-analyzer"
+                "href": "/tools/erp-cost-estimator"
+            }
+        ],
+        "items": [
+            {
+                "title": "ERP Readiness Checker",
+                "description": "Evaluasi kesiapan proses, data, dan tim Anda sebelum implementasi ERP.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/erp-readiness"
+            },
+            {
+                "title": "Automation ROI Calculator",
+                "description": "Estimasi dampak biaya, waktu, dan produktivitas dari inisiatif otomatisasi bisnis.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/automation-roi-calculator"
             },
             {
                 "title": "ERP Cost Estimator",
                 "description": "Dapatkan estimasi kasar biaya dan durasi implementasi ERP berdasarkan kompleksitas organisasi Anda.",
                 "cta": "Coba Sekarang",
                 "href": "/tools/erp-cost-estimator"
+            },
+            {
+                "title": "Workflow Efficiency Analyzer",
+                "description": "Analisis tingkat inefficiency workflow operasional untuk menemukan bottleneck utama proses bisnis.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/workflow-efficiency-analyzer"
+            },
+            {
+                "title": "Odoo Module Recommender",
+                "description": "Temukan modul Odoo prioritas berdasarkan industri, skala bisnis, dan bottleneck utama Anda.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/odoo-module-recommender"
+            },
+            {
+                "title": "Digital Maturity Assessment",
+                "description": "Benchmark kematangan sistem, proses, dan tata kelola digital perusahaan Anda.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/digital-maturity"
+            },
+            {
+                "title": "AI Readiness Assessment",
+                "description": "Evaluasi kesiapan data, tim, dan use case sebelum adopsi AI pada operasional.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/ai-readiness"
+            },
+            {
+                "title": "Scalability Assessment",
+                "description": "Identifikasi bottleneck arsitektur, proses, dan kapasitas tim sebelum scale bisnis.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/scalability-assessment"
+            },
+            {
+                "title": "Integration Analyzer",
+                "description": "Petakan kompleksitas integrasi lintas sistem untuk mengurangi silo data dan proses manual.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/integration-analyzer"
+            },
+            {
+                "title": "Reporting Readiness Assessment",
+                "description": "Evaluasi struktur pelaporan, konsistensi data, dan kesiapan dashboard untuk pengambilan keputusan.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/reporting-readiness"
+            }
+        ]
+    },
+    "toolsHub": {
+        "eyebrow": "Assessment Suite",
+        "title": "ERP & Automation Intelligence Suite",
+        "subtitle": "Pilih assessment yang paling tepat berdasarkan tahap pertumbuhan dan prioritas implementasi bisnis Anda.",
+        "description": "Setiap tool membantu memetakan gap operasional, menyelaraskan ekspektasi stakeholder, dan membuat sesi konsultasi lebih terarah.",
+        "contactTitle": "Butuh Assessment Roadmap yang Dipandu?",
+        "contactDescription": "Diskusikan dengan konsultan ERP kami untuk menentukan tool prioritas berdasarkan industri dan model operasional Anda.",
+        "contactCta": "Jadwalkan Konsultasi ERP Gratis",
+        "categoryCountSuffix": "tools",
+        "categories": [
+            {
+                "title": "Foundation",
+                "description": "Assessment dasar untuk kesiapan operasional dan standarisasi proses.",
+                "items": [
+                    {
+                        "title": "ERP Readiness Checker",
+                        "description": "Evaluasi kesiapan proses, data, dan tim sebelum implementasi ERP.",
+                        "href": "/tools/erp-readiness",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Digital Maturity Assessment",
+                        "description": "Ukur level kematangan digital perusahaan Anda lintas dimensi proses dan tata kelola.",
+                        "href": "/tools/digital-maturity",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Workflow Efficiency Analyzer",
+                        "description": "Identifikasi titik inefficiency dan bottleneck pada operasional harian.",
+                        "href": "/tools/workflow-efficiency-analyzer",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Odoo Module Recommender",
+                        "description": "Dapatkan rekomendasi modul Odoo yang sesuai profil bisnis Anda.",
+                        "href": "/tools/odoo-module-recommender",
+                        "badge": "Live"
+                    }
+                ]
+            },
+            {
+                "title": "Financial Impact",
+                "description": "Estimasi dampak finansial dan rentang budget implementasi.",
+                "items": [
+                    {
+                        "title": "Automation ROI Calculator",
+                        "description": "Hitung estimasi potensi return dari inisiatif workflow automation.",
+                        "href": "/tools/automation-roi-calculator",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "ERP Cost Estimator",
+                        "description": "Dapatkan estimasi kasar biaya dan timeline berdasarkan kompleksitas organisasi.",
+                        "href": "/tools/erp-cost-estimator",
+                        "badge": "Live"
+                    }
+                ]
+            },
+            {
+                "title": "Advanced Strategy",
+                "description": "Diagnostik strategis untuk keputusan arsitektur dan integrasi jangka panjang.",
+                "items": [
+                    {
+                        "title": "AI Readiness Assessment",
+                        "description": "Evaluasi kesiapan organisasi sebelum menerapkan workflow berbasis AI.",
+                        "href": "/tools/ai-readiness",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Scalability Assessment",
+                        "description": "Validasi kesiapan sistem dan proses untuk menopang pertumbuhan bisnis yang cepat.",
+                        "href": "/tools/scalability-assessment",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Integration Analyzer",
+                        "description": "Ukur kompleksitas integrasi agar aliran data antarsistem lebih efisien.",
+                        "href": "/tools/integration-analyzer",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Reporting Readiness Assessment",
+                        "description": "Cek fondasi pelaporan agar metrik dan dashboard siap untuk keputusan bisnis.",
+                        "href": "/tools/reporting-readiness",
+                        "badge": "Live"
+                    }
+                ]
             }
         ]
     },
@@ -390,7 +533,19 @@
         "title": "Blog Kami",
         "description": "Wawasan, pembaruan, dan berita dari tim FlowCreativ.",
         "comingSoonTitle": "Segera Hadir",
-        "comingSoonDescription": "Kami sedang membuat artikel berkualitas tinggi untuk Anda. Tetaplah bersama kami!"
+        "comingSoonDescription": "Kami sedang membuat artikel berkualitas tinggi untuk Anda. Tetaplah bersama kami!",
+        "sourcesTitle": "Sumber Resmi",
+        "sourcesDescription": "Tautan kurasi untuk update ERP, Odoo, dan engineering.",
+        "latestTitle": "Feed Industri Terbaru",
+        "latestDescription": "Dihimpun dari The News API, Hacker News, DEV Community, dan Stack Overflow.",
+        "refreshIntervalNote": "Feed ini diperbarui otomatis setiap 5 menit dengan berita terbaru.",
+        "readMore": "Baca artikel",
+        "pageInfoPrefix": "Halaman",
+        "pageInfoMiddle": "dari",
+        "paginationPrevious": "Sebelumnya",
+        "paginationNext": "Berikutnya",
+        "emptyTitle": "Belum ada artikel saat ini",
+        "emptyDescription": "Silakan coba lagi beberapa menit lagi."
     },
     "faqPage": {
         "title": "Pertanyaan yang Sering Diajukan",

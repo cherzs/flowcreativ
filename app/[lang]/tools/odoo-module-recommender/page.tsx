@@ -6,6 +6,7 @@ import { useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
+import JsonLd from '@/components/seo/json-ld'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -47,6 +48,7 @@ import {
   createOdooRecommenderSchema,
   type OdooRecommenderFormValues,
 } from '@/lib/validations/odoo-recommender-schema'
+import { getToolSchema } from '@/lib/seo'
 
 const copy = {
   id: {
@@ -137,6 +139,14 @@ export default function OdooModuleRecommenderPage() {
 
   return (
     <main className="min-h-screen bg-background pt-24 pb-14 text-foreground">
+      <JsonLd
+        id="tool-schema-odoo-module-recommender"
+        data={getToolSchema({
+          lang,
+          toolName: 'Odoo Module Recommender',
+          slug: '/tools/odoo-module-recommender',
+        })}
+      />
       <div className="container mx-auto max-w-4xl px-4">
         <div className="space-y-6">
           <Card>

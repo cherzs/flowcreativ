@@ -10,11 +10,11 @@
         "getStarted": "Get Started"
     },
     "hero": {
-        "titleStart": "Build Scalable",
-        "titleHighlight": "Digital Solutions",
-        "titleEnd": "For Your Business",
-        "description": "Transform your business with high-impact technology. We deliver enterprise-grade IT solutions, from web development to ERP implementation, designed to help you scale faster and more efficiently.",
-        "ctaPrimary": "Let's talk",
+        "titleStart": "ERP & Automation",
+        "titleHighlight": "For Growing Companies",
+        "titleEnd": "Built to Replace Manual Work",
+        "description": "We help SMEs standardize operations, integrate data, and scale with Odoo ERP, automation, and custom systems.",
+        "ctaPrimary": "Book a Discovery Call",
         "ctaSecondary": "View Our Work",
         "badge": "Best For Innovation 2024"
     },
@@ -85,14 +85,11 @@
     "tools": {
         "eyebrow": "Tools",
         "title": "ERP & Automation Intelligence Tools",
-        "subtitle": "Use our assessment tools to analyze your business needs before consultation.",
-        "items": [
-            {
-                "title": "Odoo Module Recommender",
-                "description": "Get prioritized Odoo module suggestions based on your industry, scale, and key bottleneck.",
-                "cta": "Try Now",
-                "href": "/tools/odoo-module-recommender"
-            },
+        "subtitle": "Analyze your business before consultation. Use our free assessment tools.",
+        "exploreDescription": "Need a broader framework? Explore the full assessment suite and choose the right starting point.",
+        "exploreCta": "Explore Full Assessment Suite",
+        "exploreHref": "/tools",
+        "featuredItems": [
             {
                 "title": "ERP Readiness Checker",
                 "description": "Assess your process, data, and team readiness before starting ERP implementation.",
@@ -106,16 +103,162 @@
                 "href": "/tools/automation-roi-calculator"
             },
             {
-                "title": "Workflow Efficiency Analyzer",
-                "description": "Analyze workflow inefficiency levels to identify core operational bottlenecks and integration gaps.",
+                "title": "ERP Cost Estimator",
+                "description": "Get a rough ERP implementation cost and timeline estimate based on your organization complexity.",
                 "cta": "Try Now",
-                "href": "/tools/workflow-efficiency-analyzer"
+                "href": "/tools/erp-cost-estimator"
+            }
+        ],
+        "items": [
+            {
+                "title": "ERP Readiness Checker",
+                "description": "Assess your process, data, and team readiness before starting ERP implementation.",
+                "cta": "Try Now",
+                "href": "/tools/erp-readiness"
+            },
+            {
+                "title": "Automation ROI Calculator",
+                "description": "Estimate potential cost, time, and productivity gains from automation initiatives.",
+                "cta": "Try Now",
+                "href": "/tools/automation-roi-calculator"
             },
             {
                 "title": "ERP Cost Estimator",
                 "description": "Get a rough ERP implementation cost and timeline estimate based on your organization complexity.",
                 "cta": "Try Now",
                 "href": "/tools/erp-cost-estimator"
+            },
+            {
+                "title": "Workflow Efficiency Analyzer",
+                "description": "Analyze workflow inefficiency levels to identify core operational bottlenecks and integration gaps.",
+                "cta": "Try Now",
+                "href": "/tools/workflow-efficiency-analyzer"
+            },
+            {
+                "title": "Odoo Module Recommender",
+                "description": "Get prioritized Odoo module suggestions based on your industry, scale, and key bottleneck.",
+                "cta": "Try Now",
+                "href": "/tools/odoo-module-recommender"
+            },
+            {
+                "title": "Digital Maturity Assessment",
+                "description": "Benchmark your current systems, process maturity, and governance baseline for digital transformation.",
+                "cta": "Try Now",
+                "href": "/tools/digital-maturity"
+            },
+            {
+                "title": "AI Readiness Assessment",
+                "description": "Evaluate data quality, team capability, and use-case feasibility before adopting AI in operations.",
+                "cta": "Try Now",
+                "href": "/tools/ai-readiness"
+            },
+            {
+                "title": "Scalability Assessment",
+                "description": "Identify bottlenecks in architecture, process, and team capacity before your next growth stage.",
+                "cta": "Try Now",
+                "href": "/tools/scalability-assessment"
+            },
+            {
+                "title": "Integration Analyzer",
+                "description": "Map integration complexity across systems to reduce data silos and manual reconciliation.",
+                "cta": "Try Now",
+                "href": "/tools/integration-analyzer"
+            },
+            {
+                "title": "Reporting Readiness Assessment",
+                "description": "Assess reporting structures, data consistency, and dashboard readiness for faster decisions.",
+                "cta": "Try Now",
+                "href": "/tools/reporting-readiness"
+            }
+        ]
+    },
+    "toolsHub": {
+        "eyebrow": "Assessment Suite",
+        "title": "ERP & Automation Intelligence Suite",
+        "subtitle": "Select the right assessment based on your current growth stage and implementation priorities.",
+        "description": "Each tool helps you map operational gaps, align stakeholder expectations, and enter consultation with clearer business direction.",
+        "contactTitle": "Need a Guided Assessment Roadmap?",
+        "contactDescription": "Talk with our ERP consultant to decide which tool should be prioritized based on your industry and operating model.",
+        "contactCta": "Book Free ERP Consultation",
+        "categoryCountSuffix": "tools",
+        "categories": [
+            {
+                "title": "Foundation",
+                "description": "Baseline checks for operational readiness and process standardization.",
+                "items": [
+                    {
+                        "title": "ERP Readiness Checker",
+                        "description": "Assess process, data, and team readiness before ERP implementation.",
+                        "href": "/tools/erp-readiness",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Digital Maturity Assessment",
+                        "description": "Measure your current digital maturity level across process and governance dimensions.",
+                        "href": "/tools/digital-maturity",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Workflow Efficiency Analyzer",
+                        "description": "Identify inefficiency hotspots and bottlenecks in daily operations.",
+                        "href": "/tools/workflow-efficiency-analyzer",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Odoo Module Recommender",
+                        "description": "Get practical module recommendations aligned with your business profile.",
+                        "href": "/tools/odoo-module-recommender",
+                        "badge": "Live"
+                    }
+                ]
+            },
+            {
+                "title": "Financial Impact",
+                "description": "Estimate financial outcomes and implementation budgeting range.",
+                "items": [
+                    {
+                        "title": "Automation ROI Calculator",
+                        "description": "Estimate potential return from workflow automation initiatives.",
+                        "href": "/tools/automation-roi-calculator",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "ERP Cost Estimator",
+                        "description": "Get a rough cost and timeline estimate based on organization complexity.",
+                        "href": "/tools/erp-cost-estimator",
+                        "badge": "Live"
+                    }
+                ]
+            },
+            {
+                "title": "Advanced Strategy",
+                "description": "Strategic diagnostics to prepare long-term architecture and integration decisions.",
+                "items": [
+                    {
+                        "title": "AI Readiness Assessment",
+                        "description": "Evaluate organizational readiness before introducing AI-powered workflows.",
+                        "href": "/tools/ai-readiness",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Scalability Assessment",
+                        "description": "Validate whether your systems and processes can sustain rapid growth.",
+                        "href": "/tools/scalability-assessment",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Integration Analyzer",
+                        "description": "Assess integration complexity to reduce silos and improve data flow.",
+                        "href": "/tools/integration-analyzer",
+                        "badge": "Live"
+                    },
+                    {
+                        "title": "Reporting Readiness Assessment",
+                        "description": "Check reporting foundations for reliable metrics and decision-grade dashboards.",
+                        "href": "/tools/reporting-readiness",
+                        "badge": "Live"
+                    }
+                ]
             }
         ]
     },
@@ -390,7 +533,19 @@
         "title": "Our Blog",
         "description": "Insights, updates, and news from the FlowCreativ team.",
         "comingSoonTitle": "Coming Soon",
-        "comingSoonDescription": "We are currently crafting high-quality articles for you. Stay tuned!"
+        "comingSoonDescription": "We are currently crafting high-quality articles for you. Stay tuned!",
+        "sourcesTitle": "Official Sources",
+        "sourcesDescription": "Curated links for ERP, Odoo, and engineering updates.",
+        "latestTitle": "Latest Industry Feed",
+        "latestDescription": "Aggregated from The News API, Hacker News, DEV Community, and Stack Overflow.",
+        "refreshIntervalNote": "This feed refreshes automatically every 5 minutes with the latest updates.",
+        "readMore": "Read article",
+        "pageInfoPrefix": "Page",
+        "pageInfoMiddle": "of",
+        "paginationPrevious": "Previous",
+        "paginationNext": "Next",
+        "emptyTitle": "No articles available right now",
+        "emptyDescription": "Please check again in a few minutes."
     },
     "faqPage": {
         "title": "Frequently Asked Questions",

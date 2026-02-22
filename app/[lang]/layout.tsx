@@ -3,22 +3,31 @@ import type { Metadata } from "next"
 import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "../globals.css"
+import JsonLd from "@/components/seo/json-ld"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { i18n, type Locale } from "@/i18n-config"
 import { getDictionary } from "@/lib/get-dictionary"
+import { createRootMetadata, getOrganizationSchema } from "@/lib/seo"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
-export const metadata: Metadata = {
-  title: "FlowCreativ - IT Consulting & Development Solutions",
-  description: "Expert IT consulting, web development, mobile apps, and ERP solutions for growing businesses",
-  generator: "v0.app",
-  icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
-  },
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}): Promise<Metadata> {
+  const { lang } = await params
+  const metadata = createRootMetadata(lang)
+
+  return {
+    ...metadata,
+    icons: {
+      icon: "/logo.png",
+      apple: "/logo.png",
+    },
+  }
 }
 
 export async function generateStaticParams() {
@@ -38,6 +47,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body className={`${inter.variable} ${_geistMono.variable} font-sans antialiased`}>
+        <JsonLd id="organization-schema" data={getOrganizationSchema()} />
         {/* @ts-ignore */}
         <Header dictionary={dictionary.navigation} lang={lang} />
         {children}

@@ -21,6 +21,10 @@ type ToolsSectionDictionary = {
   eyebrow?: string
   title: string
   subtitle: string
+  exploreDescription?: string
+  exploreCta?: string
+  exploreHref?: string
+  featuredItems?: ToolCardItem[]
   items: ToolCardItem[]
 }
 
@@ -50,6 +54,11 @@ export default function ToolsSection({
   dictionary: ToolsSectionDictionary
   lang: string
 }) {
+  const featuredTools =
+    dictionary.featuredItems && dictionary.featuredItems.length > 0
+      ? dictionary.featuredItems
+      : dictionary.items.slice(0, 3)
+
   return (
     <section className="border-b border-border bg-background py-24">
       <div className="container mx-auto px-4">
@@ -68,7 +77,7 @@ export default function ToolsSection({
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {dictionary.items.map((item, index) => {
+          {featuredTools.map((item, index) => {
             const Icon = toolIcons[index] || Boxes
 
             return (
@@ -96,6 +105,19 @@ export default function ToolsSection({
             )
           })}
         </div>
+
+        {dictionary.exploreCta ? (
+          <div className="mt-8 flex flex-col gap-4 rounded-xl border border-border/70 bg-card/60 p-5 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {dictionary.exploreDescription}
+            </p>
+            <Button asChild className="w-full md:w-auto">
+              <Link href={getLocalizedHref(lang, dictionary.exploreHref ?? '/tools')}>
+                {dictionary.exploreCta}
+              </Link>
+            </Button>
+          </div>
+        ) : null}
       </div>
     </section>
   )

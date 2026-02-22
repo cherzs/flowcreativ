@@ -6,6 +6,7 @@ import { useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
+import JsonLd from '@/components/seo/json-ld'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
@@ -47,6 +48,7 @@ import {
   createERPReadinessSchema,
   type ERPReadinessFormValues,
 } from '@/lib/validations/erp-readiness-schema'
+import { getToolSchema } from '@/lib/seo'
 
 const copy = {
   id: {
@@ -137,6 +139,14 @@ export default function ERPReadinessPage() {
 
   return (
     <main className="min-h-screen bg-background pt-24 pb-14 text-foreground">
+      <JsonLd
+        id="tool-schema-erp-readiness"
+        data={getToolSchema({
+          lang,
+          toolName: 'ERP Readiness Checker',
+          slug: '/tools/erp-readiness',
+        })}
+      />
       <div className="container mx-auto max-w-6xl px-4">
         <Card className="border-border/80 shadow-[0_24px_64px_rgba(17,17,17,0.08)]">
           <CardHeader className="border-b border-border/70">

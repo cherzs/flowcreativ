@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
+import JsonLd from '@/components/seo/json-ld'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -10,6 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import type { Locale } from '@/i18n-config'
+import { createToolMetadata, getToolSchema } from '@/lib/seo'
 
 const content = {
   id: {
@@ -28,6 +31,19 @@ const content = {
   },
 } as const
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}): Promise<Metadata> {
+  const { lang } = await params
+  return createToolMetadata({
+    lang,
+    toolName: 'Automation ROI Calculator',
+    slug: '/tools/automation-roi-calculator',
+  })
+}
+
 export default async function AutomationROICalculatorPage({
   params,
 }: {
@@ -37,23 +53,33 @@ export default async function AutomationROICalculatorPage({
   const copy = content[lang] ?? content.en
 
   return (
-    <main className="min-h-screen bg-background px-4 pt-24 pb-14 text-foreground">
-      <div className="container mx-auto max-w-3xl">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-2xl">{copy.title}</CardTitle>
-            <CardDescription>{copy.subtitle}</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm leading-relaxed text-muted-foreground">{copy.note}</p>
-          </CardContent>
-          <CardFooter>
-            <Button asChild>
-              <Link href={`/${lang}/contact`}>{copy.cta}</Link>
-            </Button>
-          </CardFooter>
-        </Card>
-      </div>
-    </main>
+    <>
+      <JsonLd
+        id="tool-schema-automation-roi"
+        data={getToolSchema({
+          lang,
+          toolName: 'Automation ROI Calculator',
+          slug: '/tools/automation-roi-calculator',
+        })}
+      />
+      <main className="min-h-screen bg-background px-4 pt-24 pb-14 text-foreground">
+        <div className="container mx-auto max-w-3xl">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl">{copy.title}</CardTitle>
+              <CardDescription>{copy.subtitle}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm leading-relaxed text-muted-foreground">{copy.note}</p>
+            </CardContent>
+            <CardFooter>
+              <Button asChild>
+                <Link href={`/${lang}/contact`}>{copy.cta}</Link>
+              </Button>
+            </CardFooter>
+          </Card>
+        </div>
+      </main>
+    </>
   )
 }

@@ -10,6 +10,17 @@ import Testimonials from "@/components/testimonials"
 import CTASection from "@/components/cta-section"
 import { getDictionary } from "@/lib/get-dictionary"
 import type { Locale } from "@/i18n-config"
+import type { Metadata } from "next"
+import { createHomeMetadata } from "@/lib/seo"
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}): Promise<Metadata> {
+  const { lang } = await params
+  return createHomeMetadata(lang)
+}
 
 export default async function HomePage({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params
@@ -20,9 +31,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       {/* @ts-ignore */}
       <Hero dictionary={dictionary.hero} lang={lang} />
       {/* @ts-ignore */}
-      <ServicesOverview dictionary={dictionary.services} />
-      {/* @ts-ignore */}
       <ToolsSection dictionary={dictionary.tools} lang={lang} />
+      {/* @ts-ignore */}
+      <ServicesOverview dictionary={dictionary.services} />
       {/* @ts-ignore */}
       <PricingSection dictionary={dictionary.pricing} lang={lang} />
       {/* @ts-ignore */}

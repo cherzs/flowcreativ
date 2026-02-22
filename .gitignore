@@ -32,3 +32,9 @@ tsig.log*
 
 # vercel
 .vercel
+
+.env.example
+.env.local.example
+.env.development.example
+.env.test.example
+.env.production.example
