@@ -263,13 +263,13 @@
         ]
     },
     "pricing": {
-        "label": "Pricing",
+        "label": "Investment Range",
         "title": "Core Packages for Every Business Stage",
         "subtitle": "Flexible solutions for SMEs, growing companies, and enterprises that need scalable, integrated systems.",
         "trustLine": "Trusted by startups, SMEs, and enterprise organizations to build scalable, reliable business systems.",
         "smeBadge": "Supporting SME Digital Transformation",
         "note": "Estimates vary by scope and complexity. Odoo licenses billed separately.",
-        "priceNote": "Starting from",
+        "priceNote": "Investment range",
         "cta": "Schedule a Consultation",
         "footer": "Need a custom scope? We'll craft a tailored estimate and delivery plan.",
         "items": [

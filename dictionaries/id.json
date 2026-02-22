@@ -263,13 +263,13 @@
         ]
     },
     "pricing": {
-        "label": "Harga",
+        "label": "Investment Range",
         "title": "Paket Inti untuk Berbagai Skala Bisnis",
         "subtitle": "Solusi fleksibel untuk UMKM, perusahaan berkembang, dan enterprise yang membutuhkan sistem scalable dan terintegrasi.",
         "trustLine": "Dipercaya oleh startup, UMKM, dan organisasi enterprise untuk membangun sistem bisnis yang scalable dan andal.",
         "smeBadge": "Mendukung Transformasi Digital UMKM",
         "note": "Estimasi awal disesuaikan kompleksitas dan ruang lingkup. Lisensi Odoo terpisah.",
-        "priceNote": "Mulai dari",
+        "priceNote": "Rentang investasi",
         "cta": "Jadwalkan Konsultasi",
         "footer": "Butuh kebutuhan khusus? Kami siapkan estimasi dan roadmap yang disesuaikan.",
         "items": [
