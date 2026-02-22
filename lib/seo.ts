@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 import type { Locale } from "@/i18n-config"
 
-const DEFAULT_SITE_URL = "https://flowcreativ.com"
+const DEFAULT_SITE_URL = "https://flowreativ.com"
 
 type ToolMetadataOptions = {
   lang: Locale
@@ -40,8 +40,8 @@ function normalizePath(path: string): string {
 export function getSiteUrl(): string {
   return normalizeSiteUrl(
     process.env.NEXT_PUBLIC_SITE_URL ??
-      process.env.NEXT_PUBLIC_APP_URL ??
-      DEFAULT_SITE_URL,
+    process.env.NEXT_PUBLIC_APP_URL ??
+    DEFAULT_SITE_URL,
   )
 }
 
@@ -264,33 +264,33 @@ export function getBlogFaqSchema(lang: Locale) {
   const questions =
     lang === "id"
       ? [
-          {
-            q: "Berapa biaya implementasi ERP?",
-            a: "Biaya implementasi ERP tergantung kompleksitas, jumlah user, dan kebutuhan kustomisasi.",
-          },
-          {
-            q: "Kapan perusahaan sebaiknya mulai ERP?",
-            a: "Saat proses lintas departemen mulai tidak terintegrasi, reporting lambat, dan operasional masih bergantung pada proses manual.",
-          },
-          {
-            q: "Apakah Odoo cocok untuk perusahaan berkembang?",
-            a: "Odoo cocok untuk perusahaan berkembang karena modular, fleksibel, dan dapat dikustomisasi sesuai kebutuhan operasional.",
-          },
-        ]
+        {
+          q: "Berapa biaya implementasi ERP?",
+          a: "Biaya implementasi ERP tergantung kompleksitas, jumlah user, dan kebutuhan kustomisasi.",
+        },
+        {
+          q: "Kapan perusahaan sebaiknya mulai ERP?",
+          a: "Saat proses lintas departemen mulai tidak terintegrasi, reporting lambat, dan operasional masih bergantung pada proses manual.",
+        },
+        {
+          q: "Apakah Odoo cocok untuk perusahaan berkembang?",
+          a: "Odoo cocok untuk perusahaan berkembang karena modular, fleksibel, dan dapat dikustomisasi sesuai kebutuhan operasional.",
+        },
+      ]
       : [
-          {
-            q: "How much does ERP implementation cost?",
-            a: "ERP implementation cost depends on complexity, user count, and customization requirements.",
-          },
-          {
-            q: "When should a company start ERP implementation?",
-            a: "When cross-department processes are no longer integrated, reporting is slow, and operations still rely on manual workflows.",
-          },
-          {
-            q: "Is Odoo suitable for growing companies?",
-            a: "Odoo is suitable for growing companies because it is modular, flexible, and customizable for operational needs.",
-          },
-        ]
+        {
+          q: "How much does ERP implementation cost?",
+          a: "ERP implementation cost depends on complexity, user count, and customization requirements.",
+        },
+        {
+          q: "When should a company start ERP implementation?",
+          a: "When cross-department processes are no longer integrated, reporting is slow, and operations still rely on manual workflows.",
+        },
+        {
+          q: "Is Odoo suitable for growing companies?",
+          a: "Odoo is suitable for growing companies because it is modular, flexible, and customizable for operational needs.",
+        },
+      ]
 
   return {
     "@context": "https://schema.org",

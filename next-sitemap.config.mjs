@@ -1,7 +1,7 @@
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   process.env.NEXT_PUBLIC_APP_URL ??
-  "https://flowcreativ.com"
+  "https://flowreativ.com"
 
 /** @type {import('next-sitemap').IConfig} */
 const config = {
