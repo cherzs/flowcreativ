@@ -82,6 +82,43 @@
             }
         ]
     },
+    "tools": {
+        "eyebrow": "Tools",
+        "title": "ERP & Automation Intelligence Tools",
+        "subtitle": "Gunakan assessment tools kami untuk menganalisis kebutuhan bisnis Anda sebelum konsultasi.",
+        "items": [
+            {
+                "title": "Odoo Module Recommender",
+                "description": "Temukan modul Odoo prioritas berdasarkan industri, skala bisnis, dan bottleneck utama Anda.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/odoo-module-recommender"
+            },
+            {
+                "title": "ERP Readiness Checker",
+                "description": "Evaluasi kesiapan proses, data, dan tim Anda sebelum implementasi ERP.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/erp-readiness"
+            },
+            {
+                "title": "Automation ROI Calculator",
+                "description": "Estimasi dampak biaya, waktu, dan produktivitas dari inisiatif otomatisasi bisnis.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/automation-roi-calculator"
+            },
+            {
+                "title": "Workflow Efficiency Analyzer",
+                "description": "Analisis tingkat inefficiency workflow operasional untuk menemukan bottleneck utama proses bisnis.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/workflow-efficiency-analyzer"
+            },
+            {
+                "title": "ERP Cost Estimator",
+                "description": "Dapatkan estimasi kasar biaya dan durasi implementasi ERP berdasarkan kompleksitas organisasi Anda.",
+                "cta": "Coba Sekarang",
+                "href": "/tools/erp-cost-estimator"
+            }
+        ]
+    },
     "pricing": {
         "label": "Harga",
         "title": "Paket Inti untuk Berbagai Skala Bisnis",

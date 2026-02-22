@@ -82,6 +82,43 @@
             }
         ]
     },
+    "tools": {
+        "eyebrow": "Tools",
+        "title": "ERP & Automation Intelligence Tools",
+        "subtitle": "Use our assessment tools to analyze your business needs before consultation.",
+        "items": [
+            {
+                "title": "Odoo Module Recommender",
+                "description": "Get prioritized Odoo module suggestions based on your industry, scale, and key bottleneck.",
+                "cta": "Try Now",
+                "href": "/tools/odoo-module-recommender"
+            },
+            {
+                "title": "ERP Readiness Checker",
+                "description": "Assess your process, data, and team readiness before starting ERP implementation.",
+                "cta": "Try Now",
+                "href": "/tools/erp-readiness"
+            },
+            {
+                "title": "Automation ROI Calculator",
+                "description": "Estimate potential cost, time, and productivity gains from automation initiatives.",
+                "cta": "Try Now",
+                "href": "/tools/automation-roi-calculator"
+            },
+            {
+                "title": "Workflow Efficiency Analyzer",
+                "description": "Analyze workflow inefficiency levels to identify core operational bottlenecks and integration gaps.",
+                "cta": "Try Now",
+                "href": "/tools/workflow-efficiency-analyzer"
+            },
+            {
+                "title": "ERP Cost Estimator",
+                "description": "Get a rough ERP implementation cost and timeline estimate based on your organization complexity.",
+                "cta": "Try Now",
+                "href": "/tools/erp-cost-estimator"
+            }
+        ]
+    },
     "pricing": {
         "label": "Pricing",
         "title": "Core Packages for Every Business Stage",
@@ -96,7 +133,7 @@
             {
                 "title": "Website Systems",
                 "description": "Professional websites designed for performance, scalability, and integration readiness.",
-                "price": "IDR 2.5M",
+                "price": "$1,000",
                 "tag": "WEBSITE",
                 "details": [
                     "1–3 pages",
@@ -108,7 +145,7 @@
             {
                 "title": "Odoo ERP Systems",
                 "description": "Structured Odoo setup to streamline core business operations.",
-                "price": "IDR 8M",
+                "price": "$3,000",
                 "tag": "ODOO ERP",
                 "badge": "Core Service",
                 "details": [
@@ -121,7 +158,7 @@
             {
                 "title": "Apps & Internal Systems",
                 "description": "Internal apps and dashboards to support business workflows.",
-                "price": "IDR 12M",
+                "price": "$5,000",
                 "tag": "APPS",
                 "details": [
                     "Simple internal web app",
@@ -133,7 +170,7 @@
             {
                 "title": "Enterprise & AI Integration",
                 "description": "Enterprise‑grade integrations and automation for scale.",
-                "price": "IDR 25M",
+                "price": "$15,000+",
                 "tag": "ENTERPRISE",
                 "badge": "Premium",
                 "details": [
