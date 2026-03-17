@@ -2,7 +2,7 @@ import Hero from "@/components/hero"
 import TrustedBy from "@/components/trusted-by"
 import ServicesOverview from "@/components/services-overview"
 import ToolsSection from "@/components/tools-section"
-import PricingSection from "@/components/pricing-section"
+
 import WhyChooseUs from "@/components/why-choose-us"
 import PortfolioPreview from "@/components/portfolio-preview"
 import ProcessSection from "@/components/process-section"
@@ -34,8 +34,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       <ToolsSection dictionary={dictionary.tools} lang={lang} />
       {/* @ts-ignore */}
       <ServicesOverview dictionary={dictionary.services} />
-      {/* @ts-ignore */}
-      <PricingSection dictionary={dictionary.pricing} lang={lang} />
+
       {/* @ts-ignore */}
       <WhyChooseUs dictionary={dictionary.whyChooseUs} lang={lang} />
       {/* @ts-ignore */}

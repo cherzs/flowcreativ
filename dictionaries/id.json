@@ -262,69 +262,6 @@
             }
         ]
     },
-    "pricing": {
-        "label": "Investment Range",
-        "title": "Paket Inti untuk Berbagai Skala Bisnis",
-        "subtitle": "Solusi fleksibel untuk UMKM, perusahaan berkembang, dan enterprise yang membutuhkan sistem scalable dan terintegrasi.",
-        "trustLine": "Dipercaya oleh startup, UMKM, dan organisasi enterprise untuk membangun sistem bisnis yang scalable dan andal.",
-        "smeBadge": "Mendukung Transformasi Digital UMKM",
-        "note": "Estimasi awal disesuaikan kompleksitas dan ruang lingkup. Lisensi Odoo terpisah.",
-        "priceNote": "Rentang investasi",
-        "cta": "Jadwalkan Konsultasi",
-        "footer": "Butuh kebutuhan khusus? Kami siapkan estimasi dan roadmap yang disesuaikan.",
-        "items": [
-            {
-                "title": "Website Systems",
-                "description": "Website profesional yang siap di-scale untuk performa, pertumbuhan, dan integrasi.",
-                "price": "Rp2,5 jt",
-                "tag": "WEBSITE",
-                "details": [
-                    "1–3 halaman",
-                    "Desain responsif",
-                    "Integrasi WhatsApp",
-                    "Admin/form kontak dasar"
-                ]
-            },
-            {
-                "title": "Odoo ERP Systems",
-                "description": "Setup Odoo yang terstruktur untuk menyederhanakan operasional bisnis.",
-                "price": "Rp8 jt",
-                "tag": "ODOO ERP",
-                "badge": "Layanan Utama",
-                "details": [
-                    "Setup Odoo Community",
-                    "Setup 1 modul (Sales/Invoice/Inventory)",
-                    "Konfigurasi dasar",
-                    "Training dasar"
-                ]
-            },
-            {
-                "title": "Apps & Internal Systems",
-                "description": "Aplikasi internal dan dashboard untuk mendukung workflow bisnis.",
-                "price": "Rp12 jt",
-                "tag": "APPS",
-                "details": [
-                    "Web app internal sederhana",
-                    "Dashboard operasional",
-                    "Backend dasar",
-                    "Scope 1 fitur utama"
-                ]
-            },
-            {
-                "title": "Enterprise & AI Integration",
-                "description": "Integrasi enterprise dan otomasi untuk operasi berskala besar.",
-                "price": "Rp25 jt",
-                "tag": "ENTERPRISE",
-                "badge": "Premium",
-                "details": [
-                    "Integrasi sistem",
-                    "Setup automation",
-                    "Integrasi ERP atau aplikasi",
-                    "Basic AI automation"
-                ]
-            }
-        ]
-    },
     "footer": {
         "description": "Membantu bisnis berkembang dengan solusi digital yang skalabel dan modern.",
         "quickLinks": "Tautan Cepat",
