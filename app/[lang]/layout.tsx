@@ -6,6 +6,7 @@ import "../globals.css"
 import JsonLd from "@/components/seo/json-ld"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import AIChatWidget from "@/components/ai-chat-widget"
 import { i18n, type Locale } from "@/i18n-config"
 import { getDictionary } from "@/lib/get-dictionary"
 import { createRootMetadata, getOrganizationSchema } from "@/lib/seo"
@@ -53,6 +54,7 @@ export default async function RootLayout({
         {children}
         {/* @ts-ignore */}
         <Footer dictionary={dictionary.footer} contact={dictionary.contact} lang={lang} />
+        <AIChatWidget />
         <Analytics />
       </body>
     </html>

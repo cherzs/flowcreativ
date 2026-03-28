@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="url(#gradient1)"/>
+  <circle cx="600" cy="350" r="150" fill="white" fill-opacity="0.1"/>
+  <circle cx="600" cy="350" r="100" fill="white" fill-opacity="0.15"/>
+  <circle cx="600" cy="350" r="50" fill="white" fill-opacity="0.2"/>
+  <path d="M600 250 L600 450 M500 350 L700 350" stroke="white" stroke-width="4" stroke-opacity="0.5"/>
+  <circle cx="600" cy="350" r="15" fill="white"/>
+  <text x="600" y="550" text-anchor="middle" font-family="system-ui" font-size="48" font-weight="bold" fill="white">AI Setup</text>
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui" font-size="24" fill="white" fill-opacity="0.8">Enterprise Implementation</text>
+  <defs>
+    <linearGradient id="gradient1" x1="0" y1="0" x2="1200" y2="800">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+</svg>

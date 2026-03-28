@@ -10,10 +10,10 @@
         "getStarted": "Get Started"
     },
     "hero": {
-        "titleStart": "ERP & Automation",
-        "titleHighlight": "For Growing Companies",
-        "titleEnd": "Built to Replace Manual Work",
-        "description": "We help SMEs standardize operations, integrate data, and scale with Odoo ERP, automation, and custom systems.",
+        "titleStart": "AI & Automation",
+        "titleHighlight": "Partner for Indonesia",
+        "titleEnd": "Simplify Your Operations",
+        "description": "We help Indonesian businesses integrate AI and smart automation to save time, reduce costs, and accelerate growth.",
         "ctaPrimary": "Book a Discovery Call",
         "ctaSecondary": "View Our Work",
         "badge": "Best For Innovation 2024"
@@ -84,7 +84,7 @@
     },
     "tools": {
         "eyebrow": "Tools",
-        "title": "ERP & Automation Intelligence Tools",
+        "title": "AI & Automation Intelligence Tools",
         "subtitle": "Analyze your business before consultation. Use our free assessment tools.",
         "exploreDescription": "Need a broader framework? Explore the full assessment suite and choose the right starting point.",
         "exploreCta": "Explore Full Assessment Suite",
@@ -174,7 +174,7 @@
     },
     "toolsHub": {
         "eyebrow": "Assessment Suite",
-        "title": "ERP & Automation Intelligence Suite",
+        "title": "AI & Automation Intelligence Suite",
         "subtitle": "Select the right assessment based on your current growth stage and implementation priorities.",
         "description": "Each tool helps you map operational gaps, align stakeholder expectations, and enter consultation with clearer business direction.",
         "contactTitle": "Need a Guided Assessment Roadmap?",
@@ -378,6 +378,21 @@
                 "title": "Luxury Glamping UI",
                 "industry": "Landing Page / Brand Concept",
                 "description": "Luxury glamping booking experience UI with premium visual direction."
+            },
+            "aiSetup": {
+                "title": "AI Setup for Enterprise",
+                "industry": "AI Implementation / Enterprise",
+                "description": "End-to-end AI implementation for business process automation, customer service, and data analytics tailored for your company."
+            },
+            "aiIntegration": {
+                "title": "AI Integration with Website",
+                "industry": "AI Integration / Web Development",
+                "description": "Add intelligent chatbots, content personalization, and other AI features to your website for enhanced user experience."
+            },
+            "aiFinance": {
+                "title": "AI Financial Reporting",
+                "industry": "AI Finance / Automation",
+                "description": "Automate financial report generation, cash flow prediction, and financial analysis using artificial intelligence."
             }
         }
     },
@@ -457,7 +472,7 @@
     },
     "aboutPage": {
         "title": "About FlowCreativ",
-        "description": "We are a team of digital innovators dedicated to shrinking the gap between technology and business growth.",
+        "description": "AI & Automation Partner for Indonesian businesses. We help integrate artificial intelligence and automation into your daily operations.",
         "missionTitle": "Our Mission",
         "missionDescription": "To empower businesses with scalable, high-performance digital solutions that drive real results.",
         "visionTitle": "Our Vision",

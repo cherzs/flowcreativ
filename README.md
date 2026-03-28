@@ -1,6 +1,6 @@
-# FlowCreativ - Website Profesional untuk UMKM
+# FlowCreativ - AI & Automation Partner untuk Bisnis Indonesia
 
-Website responsif yang dirancang untuk membantu UMKM bertumbuh di dunia digital melalui desain website profesional yang menghasilkan penjualan.
+Partner AI & Otomasi untuk bisnis Indonesia. Kami membantu integrasi kecerdasan buatan dan otomasi cerdas untuk menghemat waktu, mengurangi biaya, dan mempercepat pertumbuhan bisnis.
 
 ## 🚀 Fitur Utama
 

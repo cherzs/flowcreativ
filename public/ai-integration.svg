@@ -1,0 +1,23 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="url(#gradient2)"/>
+  <rect x="350" y="250" width="500" height="300" rx="20" fill="white" fill-opacity="0.1" stroke="white" stroke-width="3"/>
+  <rect x="380" y="280" width="440" height="50" rx="10" fill="white" fill-opacity="0.2"/>
+  <rect x="380" y="350" width="200" height="20" rx="5" fill="white" fill-opacity="0.15"/>
+  <rect x="380" y="380" width="300" height="20" rx="5" fill="white" fill-opacity="0.15"/>
+  <rect x="380" y="410" width="250" height="20" rx="5" fill="white" fill-opacity="0.15"/>
+  <circle cx="750" cy="450" r="40" fill="url(#gradient3)"/>
+  <path d="M740 450 L750 440 L765 455" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="620" text-anchor="middle" font-family="system-ui" font-size="48" font-weight="bold" fill="white">AI Integration</text>
+  <text x="600" y="670" text-anchor="middle" font-family="system-ui" font-size="24" fill="white" fill-opacity="0.8">Smart Website Solutions</text>
+  <defs>
+    <linearGradient id="gradient2" x1="0" y1="0" x2="1200" y2="800">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="gradient3" x1="710" y1="410" x2="790" y2="490">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="url(#gradient4)"/>
+  <rect x="300" y="200" width="600" height="400" rx="20" fill="white" fill-opacity="0.1"/>
+  <path d="M350 500 L450 400 L550 420 L650 300 L750 350 L850 250" stroke="url(#gradient5)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="350" cy="500" r="8" fill="white"/>
+  <circle cx="450" cy="400" r="8" fill="white"/>
+  <circle cx="550" cy="420" r="8" fill="white"/>
+  <circle cx="650" cy="300" r="8" fill="white"/>
+  <circle cx="750" cy="350" r="8" fill="white"/>
+  <circle cx="850" cy="250" r="8" fill="white"/>
+  <text x="600" y="260" text-anchor="middle" font-family="system-ui" font-size="20" fill="white" fill-opacity="0.7">Financial Report</text>
+  <text x="600" y="650" text-anchor="middle" font-family="system-ui" font-size="48" font-weight="bold" fill="white">AI Finance</text>
+  <text x="600" y="700" text-anchor="middle" font-family="system-ui" font-size="24" fill="white" fill-opacity="0.8">Automated Reporting</text>
+  <defs>
+    <linearGradient id="gradient4" x1="0" y1="0" x2="1200" y2="800">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="gradient5" x1="350" y1="500" x2="850" y2="250">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+</svg>

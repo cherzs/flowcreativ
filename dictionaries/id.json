@@ -10,10 +10,10 @@
         "getStarted": "Mulai Sekarang"
     },
     "hero": {
-        "titleStart": "Sistem ERP & Otomasi",
-        "titleHighlight": "Untuk Perusahaan Bertumbuh",
-        "titleEnd": "Untuk Gantikan Proses Manual",
-        "description": "Kami membantu UMKM menstandarkan operasional, mengintegrasikan data, dan scale dengan Odoo ERP, automation, serta sistem kustom.",
+        "titleStart": "Partner AI & Otomasi",
+        "titleHighlight": "Untuk Bisnis Indonesia",
+        "titleEnd": "Tenangkan Operasional dengan AI",
+        "description": "Kami membantu bisnis Indonesia mengintegrasikan AI dan otomasi cerdas untuk menghemat waktu, mengurangi biaya, dan mempercepat pertumbuhan.",
         "ctaPrimary": "Jadwalkan Discovery Call",
         "ctaSecondary": "Lihat Karya Kami",
         "badge": "Terbaik Untuk Inovasi 2024"
@@ -84,7 +84,7 @@
     },
     "tools": {
         "eyebrow": "Tools",
-        "title": "ERP & Automation Intelligence Tools",
+        "title": "AI & Automation Intelligence Tools",
         "subtitle": "Analisis kebutuhan bisnis Anda sebelum konsultasi. Gunakan assessment tools gratis kami.",
         "exploreDescription": "Butuh framework yang lebih lengkap? Jelajahi full assessment suite untuk menentukan titik mulai paling tepat.",
         "exploreCta": "Jelajahi Full Assessment Suite",
@@ -174,7 +174,7 @@
     },
     "toolsHub": {
         "eyebrow": "Assessment Suite",
-        "title": "ERP & Automation Intelligence Suite",
+        "title": "AI & Automation Intelligence Suite",
         "subtitle": "Pilih assessment yang paling tepat berdasarkan tahap pertumbuhan dan prioritas implementasi bisnis Anda.",
         "description": "Setiap tool membantu memetakan gap operasional, menyelaraskan ekspektasi stakeholder, dan membuat sesi konsultasi lebih terarah.",
         "contactTitle": "Butuh Assessment Roadmap yang Dipandu?",
@@ -378,6 +378,21 @@
                 "title": "UI Glamping Mewah",
                 "industry": "Konsep Landing Page / Brand",
                 "description": "UI pengalaman pemesanan glamping mewah dengan arahan visual premium."
+            },
+            "aiSetup": {
+                "title": "Setup AI untuk Perusahaan",
+                "industry": "AI Implementation / Enterprise",
+                "description": "Implementasi AI end-to-end untuk otomasi proses bisnis, customer service, dan analisis data perusahaan Anda."
+            },
+            "aiIntegration": {
+                "title": "Integrasi AI dengan Website",
+                "industry": "AI Integration / Web Development",
+                "description": "Tambahkan chatbot cerdas, personalisasi konten, dan fitur AI lainnya ke website Anda untuk pengalaman pengguna yang lebih baik."
+            },
+            "aiFinance": {
+                "title": "Laporan Keuangan dengan AI",
+                "industry": "AI Finance / Automation",
+                "description": "Otomatisasi pembuatan laporan keuangan, prediksi arus kas, dan analisis finansial dengan kecerdasan buatan."
             }
         }
     },
@@ -457,7 +472,7 @@
     },
     "aboutPage": {
         "title": "Tentang FlowCreativ",
-        "description": "Kami adalah tim inovator digital yang berdedikasi untuk memperkecil jarak antara teknologi dan pertumbuhan bisnis.",
+        "description": "Partner AI & Otomasi untuk bisnis Indonesia. Kami bantu integrasikan kecerdasan buatan dan otomasi ke dalam operasional harian Anda.",
         "missionTitle": "Misi Kami",
         "missionDescription": "Memberdayakan bisnis dengan solusi digital yang skalabel dan berkinerja tinggi yang memberikan hasil nyata.",
         "visionTitle": "Visi Kami",
