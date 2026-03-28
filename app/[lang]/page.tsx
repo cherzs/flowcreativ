@@ -40,7 +40,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: Loc
       {/* @ts-ignore */}
       <TrustedBy dictionary={dictionary.trustedBy} />
       {/* @ts-ignore */}
-      <PortfolioPreview lang={lang} limit={6} dictionary={dictionary.portfolio} />
+      <PortfolioPreview lang={lang} dictionary={dictionary.portfolio} />
       <ProcessSection dictionary={dictionary.process} lang={lang} />
       {/* @ts-ignore */}
       <Testimonials dictionary={dictionary.testimonials} />
